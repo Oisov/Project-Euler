@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{pst-node}   
+\SpecialCoor
+\usepackage{xcolor}
+\usepackage[active,tightpage]{preview}
+\PreviewBorder=0pt\relax
+\PreviewEnvironment{pspicture}
+
+\begin{document}
+
+\begin{pspicture}(-3.25,-3.25)(3.25,3.25)
+  \def\R{1}
+  \def\RR{2}    
+  \pnode(\R;30){A}\rput(\RR;30){$A$}
+  \pnode(\R;150){B}\rput(\RR;150){$B$}
+  \pnode(\R;270){C}\rput(\RR;270){$C$}
+  \psset{opacity=0.4}
+  \def\r{2}
+  \pscircle*[linecolor=red](A){\r} 
+  \pscircle*[linecolor=green](B){\r} 
+  \pscircle*[linecolor=blue](C){\r}
+  \def\d{1.5}
+  \rput(\d;90){$A \cap B$}
+  \rput(\d;210){$B \cap C$}
+  \rput(\d;-30){$A \cap C$}  
+  \rput(0,0){$A\cap B\cap C$}
+\end{pspicture}
+
+\end{document}

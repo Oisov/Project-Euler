@@ -1,0 +1,70 @@
+%!../Project-Euler.tex
+
+\begin{ProjectEuler}[Sum square difference]{6}
+The sum of the squares of the first ten natural numbers is,
+%
+\begin{align*}
+	1^2 + 2^2 + \ldots + 10^2 = 385
+\end{align*}
+%
+The square of the sum of the first ten natural numbers is,
+%
+\begin{align*}
+	(1 + 2 + \ldots + 10)^2 = 55^2 = 3025
+\end{align*}
+%
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is $3025 - 385 = 2640$. 
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+\end{ProjectEuler}
+
+This is one of the problems that can be solved in $\mathcal{O}(1)$ constant time. The first step is to find the sum of 
+the first $n$ natural numbers. Let $S_n$ denote the sum of the first $n$ numbers.
+%
+\begin{align*}
+	S_n = 1 + 2 + \cdots + (n-1) + n
+\end{align*}
+%
+As an example $S_5 = 1 + 2 + 3 + 4 + 5 = 15$. However we could also have found this by a more convoluted method
+%
+\begin{align*}
+ 	  & (1 + 2 + 3 + 4 + 5)
+	+ & (5 + 4 + 3 + 2 + 1)
+	= & (6 + 6 + 6 + 6 + 6)
+\end{align*}
+%
+So we have $S_5 = (6 \cdot 5) /2$. More generally we have
+%
+\begin{align*}
+	S_n = 1 + 2 + \cdots + (n-1) + n = \frac{n(n+1)}{2}
+\end{align*}
+%
+Which can be proved formally using induction. We have a similar formula for the square of the natural numbers
+%
+\begin{align*}
+	S_n^2 = 1^2 + 2^2 + \cdots + (n-1)^2 + n = \frac{1}{6} n(n+1)(2*n+1)
+\end{align*}
+%
+Again this can be proven formally using induction. However we will use a slightly more intuitive approach. On one hand we have
+%
+\begin{align*}
+	\sum_{i=1}^{n} i^2 - (i-1)^2
+	= (1^2-1^2) + (2^2-1^2) + (3^2 - 2^2) + \cdots + ((n-2)^2 + (n-1)^2) + (n^2 - (n-1)^2) 
+	= n^2
+\end{align*}
+%
+Another way to write the sum is as follows
+%
+\begin{align*}
+	  \sum_{i=1}^{n} i^2 - (i-1)^2
+	= \sum_{i=1}^n 2 i - 1
+	= 2 \left( \sum_{i=1}^n i \right)  - n
+	= 2 S_n - n
+\end{align*}
+%
+Comparing with equation 3 we have
+%
+\begin{align*}
+	3 S_n^2 = (n+1)^3 - 3 S_n + n
+	        = 
+\end{align*}

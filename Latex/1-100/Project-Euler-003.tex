@@ -1,0 +1,312 @@
+
+\begin{ProjectEuler}[Largest prime factor]{3}
+The prime factors of $13195$ are $5$, $7$, $13$ and $29$. \medskip
+
+\noindent What is the largest prime factor of the number $600851475143$?
+\end{ProjectEuler}
+
+This is another rabbit hole that goes deep, so be warned. However we will stop before you accidentally 
+ends up with a masters degree in mathematics. While checking if a number is prime is easy, prime factorization on the other hand is hard. 
+Said very naively this is because we do not need to find a single factor to ensure that a number is prime. Instead the most common
+technique is a probabilistic approach. However we will come back to that later. 
+
+Instead we will look at a few simple algorithms for factoring primes. At the end I will give some pointers on more complicated
+algorithms which is used to factor bigger and harder composite numbers.
+
+Note that the problem only asks us to find the biggest factor. However in term of running time this is just as hard as finding all the factors. 
+The most naive approach can be implemented as follows. 
+%
+\begin{pythoncode}
+def largest_primefactor_naive(num):
+    i = 2
+    while i < num:
+        while num % i == 0:
+            num //= i
+        i += 1
+    return num
+\end{pythoncode}
+%
+We can improve the running time in several ways. The first is an improvement of the upper bound
+\begin{lemma}
+\label{lemma:q<sqrt(n)}
+Every composite number $n$ has exactly one prime factor $q$ such that $q > \sqrt{n}$.
+\end{lemma}
+\begin{proof}
+	We will prove this using contradiction. Since $n$ is composite, $n$ has \emph{atleast} two prime factors $p$ and $q$. 
+	Assume by contradiction that $p > \sqrt{n}$ and $q > \sqrt{n}$. This implies that $p \cdot q > \sqrt{n} \cdot \sqrt{n} > n$.
+	We have now reached a contradiction because: $p$ and $q$ are prime factors of $n \quad \Longleftrightarrow \quad  n = p \cdot q$.
+\end{proof}
+%
+\Cref{lemma:q<sqrt(n)} implies that we only need to test numbers up to $\sqrt{n}$. The last factor $q > \sqrt{n}$ must be a prime factor
+otherwise we could have written it as $p = a \cdot b$ and $a, b < \sqrt{n}$. So $a$, $b$ would have been discovered as factors
+since we test numbers up to $\sqrt{n}$.
+
+Another improvement is that we do not need to check \emph{every} number up to $\sqrt{n}$. If we first check that the number is divisible by 
+$2$ we only need to iterate over the odd numbers.
+%
+Which of these two methods do you think gives the greatest improvement in speed? 
+%
+%
+\begin{table}[h!tbp]
+	\caption{Timings in \si{\ms} for some of the prime factor methods }
+	\label{table: PE-3: naive-sqrt-wheel}
+	\begin{tabular}{
+	c 
+	S[table-format=15.0]
+	S[table-number-alignment=right, table-figures-decimal=3, table-auto-round]
+	S[table-number-alignment=right, table-figures-decimal=3, table-auto-round]
+	S[table-number-alignment=right, table-figures-decimal=3, table-auto-round]
+	S[table-number-alignment=right, table-figures-decimal=3, table-auto-round]
+	S[table-number-alignment=right, table-figures-decimal=3, table-auto-round]
+	c }
+		\toprule
+            &    {Number} & {  Naive } & {sqrt(n)} & {wheel-2} & {wheel-23} & {wheel-235} & \\
+        \midrule
+            &                600851    &    4.95419670719 & 0.14108598771 & 0.031280533569 & 0.0300534137255 & 0.011960684135 & \\
+            &              60085147    &    124.833852142 & 1.24595861474 & 0.213523528579 & 0.237041557598 & 0.116548277881 & \\
+            &            6008514751    &    1047.40761616 & 2.80566540182 & 0.799210475336 & 0.651435846951 & 0.416251968787  &\\
+          	&          600851475143    &    5.2521231679  & 2.72888239623 & 0.594259930747 & 0.543554725537 & 0.292601595386 &\\
+            &      6008514751436008    &    {timeout} 	  & 158.619660114 & 71.0721562764  & 81.5635051611  & 47.0534945511  &  \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+%
+From \cref{table: PE-3: naive-sqrt-wheel} we can see that the different wheel-factoring algorithms outperforms 
+the naive implementation by several orders of magnitude. It is difficult to see exactly how much of an improvement
+\verb|wheel-23| is over \verb|wheel-2|, because our numbers are too small. However \verb|wheel-235| offers a significant improvement. 
+We can genreralize the \verb|verb| algorithm to $n$-primes using the following code
+%
+\begin{pythoncode}
+	from primesieve import generate_n_primes
+
+	def largest_factor(n, number_of_spokes = 3):
+	
+	    spokes = generate_n_primes(number_of_spokes)
+	    wheel = reduce(lambda x, y: x * y, spokes)
+	    composites = []
+	    for i in range(1, wheel):
+	        if all( i % k != 0 for k in spokes):
+	            composites.append(i)
+	
+	    for x in spokes:
+	        if n % x == 0 and n > x:
+	            n //= x
+	            while n % x == 0:
+	                n //= x
+	            if n == 1: 
+	                return x
+	    x = 0
+	    limit = int(n**0.5) + 1
+	    while x < limit:
+	        for k in composites:
+	            if n % (x+k) == 0 and x+k > 1:
+	                n //= (x+k)
+	                while n % (x+k) == 0:
+	                    n //= (x+k)
+	                if n == 1: return x+k
+	                limit = int(n**0.5) + 1
+	        x += wheel
+	    return n
+\end{pythoncode}
+%
+We can improve the \verb|wheel| factorization further by only iterating over the primes. This is the best we can do for a wheel factorization, however
+it is only best given that we have a fast way to generate primes. Keeping a large list of primes would slow this method down significantly.
+Luckily Python has a few libraries which can help us solve this problem.
+%
+\begin{pythoncode}
+	from primesieve import Iterator
+	
+	def prime_gen(num):
+	    if isprime(num): return num
+	    it = Iterator()
+	    prime = it.next_prime()
+	    limit = num**0.5
+	    while prime < limit:
+	        if num % prime == 0: 
+	            num //= prime
+	            while num % prime == 0: num //= prime
+	            if num == 1: return prime
+	            if isprime(num): return num
+	            limit = num**0.5
+	        prime = it.next_prime()
+	    return num
+\end{pythoncode}
+%
+As we shall see for small numbers this gives a significant speedboost. Until now all of our methods have consisted of sieving out primes
+starting with the smallest one. As you probably have seen this is slow for all but the tiniest of numbers. To get another speed improvement
+we need to change our approach. One of the simplest alternatives to the wheel-factorization is the Pollard's rho algorithm
+\footnote{See \url{https://en.wikipedia.org/wiki/Pollard\%27s_rho_algorithm}}.
+%
+\paragraph*{Pollard's rho algorithm}
+%
+\begin{pythoncode}
+def pollard_rho(N):
+        if N%2==0:
+                return 2
+        x = randint(1, N-1)
+        y = x
+        c = randint(1, N-1)
+        g = 1
+        while g==1:             
+                x = ((x*x)%N+c)%N
+                y = ((y*y)%N+c)%N
+                y = ((y*y)%N+c)%N
+                g = gcd(abs(x-y),N)
+        return g
+\end{pythoncode}
+%
+This returns just a single divisor. To get all the divisors we can use a simple generator
+%
+\begin{pythoncode}
+	def generator(N):
+	    while not isprime(N) and N > 1:
+	        factor = pollard_rho(N)
+	        for fac in pollard_rho_generator(factor):
+	            yield fac
+	        N //= factor
+	    yield N
+\end{pythoncode}
+%
+We will use this generator for a few other functions as well. For now it is enough
+to say that it recursively generates the prime factors. A quick explanation of how this algorithm 
+works can be found in the footnotes\footnote{The Birthday Paradox: A Quick Tutorial on Pollard's Rho Algorithm
+\url{https://www.cs.colorado.edu/~srirams/courses/csci2824-spr14/pollardsRho.html}}  
+
+Brent's factorization method is an improvemen to Pollard's rho algorithm,
+published by R. Brent in 1980 [9]. In Pollard's rho algorithm, one tries to find a 
+non trivial factor $s$ of $N$ by finding indices $i$, $j$ with $i < j$ such that $x_i \equiv \pmod{s}$ and
+$x_i \not\equiv x_j \pmod{N}$. The $x_n$ sequence is defined by the recurrence relation:
+\begin{align*}
+	x_0 & \equiv 2 \pmod{N} \\
+	x_{n+1} & \equiv x_{n}^2 + 2 \pmod{N}
+\end{align*}
+Pollard suggested that $x_n$ be compared to n $x_{2n}$ for $n = 1,\,2,\,3,\,\ldots$ Brent's
+improvement to Pollard's method is to compare $n_x$ to $x_m$ , where $m$ is the largest integral
+power of $2$ less than $n$.
+%
+\paragraph*{Brent's factorization method}
+%
+\begin{pythoncode}
+	def brent(num):
+	    if num % 2 == 0:
+	        return 2
+	    y, c, m = randint(1, num-1), randint(1, num-1), randint(1, num-1)
+	    s, r, q = 1, 1, 1
+	    while s == 1:
+	        x = y
+	        for i in range(r):
+	            y = ((y*y) % num+c) % num
+	        k = 0
+	        while (k < r and s == 1):
+	            ys = y
+	            for i in range(min(m, r-k)):
+	                y = ((y*y) % num+c) % num
+	                q = q*(abs(x-y)) % num
+	            s = gcd(q, num)
+	            k += m
+	        r = r*2
+	    if s == num:
+	        while True:
+	            ys = ((ys*ys) % num+c) % num
+	            s = gcd(abs(x-ys), num)
+	            if s > 1:
+	                break
+	    return s
+\end{pythoncode}
+%
+We can make a slight improvement to this algorithm. Most fast prime factorization algorithms start with sieving 
+out the small prime factors. 
+%
+\begin{pythoncode}
+	from primesieve import generate_n_primes
+	
+	NUM_OF_PRIMES = 10**3
+	PRIMES = generate_n_primes(NUM_OF_PRIMES)
+	
+	def small_factor_generator(num):
+	    if isprime(num):
+	        yield num
+	    for prime in PRIMES:
+	        if num % prime == 0:
+	            num //= prime
+	            yield prime  # Returns the next factor
+	            while num % prime == 0:
+	                num //= prime
+	                yield prime
+	            if prime > num**0.5:
+	                break
+	    yield num
+\end{pythoncode}
+%
+As usual Python has specialized algorithms for factoring integers, one of these is the \verb|primefac| 
+package\footnote{\url{https://pypi.python.org/pypi/primefac}}. The description of the package reads as follows:
+
+\begin{displayquote}
+	This is a module and command-line utility for factoring integers. As a module, we provide a primality test, several functions 
+	for extracting a non-trivial factor of an integer, and a generator that yields all of a number’s prime factors (with multiplicity). 
+	As a command-line utility, this project aims to replace GNU’s factor command with a more versatile utility — in particular, 
+	this utility can operate on arbitrarily large numbers, uses multiple cores in parallel, uses better algorithms, handles input 
+	in reverse Polish notation, and can be tweaked via command-line flags. Specifically
+%
+	\begin{itemize}
+	    \item One thread runs Brent’s variation on Pollard’s rho algorithm. This is good for extracting smallish factors quickly.
+	    \item One thread runs the two-stage version of Pollard’s p-1 method. This is good at finding factors p for which p-1 is a 
+	    	  product of small primes.
+	    \item One thread runs Williams’ p+1 method. This is good at finding factors p for which p+1 is a product of small primes.
+	    \item One thread runs the elliptic curve method. This is a bit slower than Pollard’s rho algorithm when the factors 
+	    	  extracted are small, but it has significantly better performance on difficult factors.
+	    \item One thread runs the multiple-polynomial quadratic sieve. This is the best algorithm for factoring "hard" numbers 
+	    	  short of the horrifically complex general number field sieve. However, it’s (relatively speaking) more than a little 
+	    	  slow when the numbers are small, and the time it takes depends only on the size of the number being factored rather 
+	    	  than the size of the factors being extracted as with Pollard’s rho algorithm and the elliptic curve method, so we use 
+	    	  the preceding algorithms to handle those.
+	\end{itemize}
+%
+\end{displayquote}
+
+There has been much studies done on using elliptic curves for factorizing integers. These methods in general are quite complex to not only
+implement but also understand. I implemented a naive version of the Lenstra elliptic curve factorization \cite{Lenstra}, however
+this did not give any speed increases on the integers tested. The reason is that the elliptic curve I used was choosen at random. 
+The \verb|primefac| package probably has a much better implementation than me.
+
+Some of the heavier methods are much slower for small factor. The following list gives a rough estimate for which algorithm should be used
+at what number range. 
+%
+\begin{itemize}
+	\item Small Numbers : Use simple sieve algorithms to create list of primes and do plain factorization. Works blazingly fast for small numbers.
+	\item Big Numbers : Use Pollard's rho algorithm, Shanks' square forms factorization (Thanks to Dana Jacobsen for the pointer)
+	\item Less Than $10^{25}$ : Use Lenstra elliptic curve factorization \cite{Lenstra}
+	\item Less Than $10^{100}$ : Use Use Quadratic sieve
+	\item More Than $10^{100}$ : See \cite{Pomerance96atale} for a layman introduction to the General number field sieve [GNFS]. For a more in depth study
+	of GNFS see \cite{Briggs98anintroduction}.
+\end{itemize}
+%
+A speed comparison for the more advanced factoring methods can be found in \cref{table: PE-3: primegen-pollard-brent-primefac}. 
+Brent* denotes, uses a prime sieve to remove small primefactors before invoking Brent's improved Pollard Rho algorithm. 
+%
+\begin{table}[h!tbp]
+	\caption{Timings in \si{\ms} for some of the prime factor methods }
+	\label{table: PE-3: primegen-pollard-brent-primefac}
+	\begin{tabular}{
+	c 
+	S[table-format=23.0]
+	S[table-number-alignment=center, table-figures-decimal=3, table-auto-round]
+	S[table-number-alignment=center, table-figures-decimal=3, table-auto-round]
+	S[table-number-alignment=center, table-figures-decimal=3, table-auto-round]
+	S[table-number-alignment=center, table-figures-decimal=3, table-auto-round]
+	c }
+		\toprule
+            &                 {Number}   &        {Prime gen}  &  {Pollard Rho} &        {Brent} &        {Brent*} &    \\
+        \midrule
+          	&             600851475143    &    0.267652838367  & 0.303145397497 & 0.241768215367 & 0.0817887596012 &  \\
+            &         6008514751436008    &    0.245708782489  & 0.243921040691 & 0.215603781952 & 0.232111869427  & \\
+            & 600851475143600851475143    &    1.63928404798   & 1.95475265024  & 1.04038712453  & 0.366906164083  & \\
+            &            1389133318189    &    34.9505326148   & 3.58912515518  & 1.42747487672  & 1.72358896308   & \\
+            &          138912436076543    &    284.297268737   & 11.0395493611  & 3.7835773567   & 3.89397909398   & \\
+            &        13891248322099591    &    \text{timeout}  & 103.696743328  & 20.749950072   & 14.7731517139   & \\ 
+        \bottomrule
+    \end{tabular}
+\end{table}
+%
+\bibliographystyle{amsalpha}
+\bibliography{../REFF}

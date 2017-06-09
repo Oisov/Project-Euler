@@ -1,0 +1,25 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{Pom96}
+
+\bibitem[Bri98]{Briggs98anintroduction}
+Matthew~E. Briggs, \emph{An introduction to the general number field sieve},
+  Tech. report, 1998,
+  \url{http://www.math.vt.edu/people/brown/doc/briggs_gnfs_thesis.pdf}.
+
+\bibitem[Len87]{Lenstra}
+H.~W. Lenstra, \emph{Factoring integers with elliptic curves}, Annals of
+  Mathematics \textbf{126} (1987), no.~3, 649--673,
+  http://www.jstor.org/stable/1971363.
+
+\bibitem[Pom96]{Pomerance96atale}
+Carl Pomerance, \emph{A tale of two sieves}, Notices American Mathematical
+  Society \textbf{43} (1996), 1473--1485,
+  \url{http://www.ams.org/notices/199612/pomerance.pdf}.
+
+\end{thebibliography}

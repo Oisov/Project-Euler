@@ -1,0 +1,37 @@
+
+\begin{ProjectEuler}[Smallest multiple]{5}
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+\end{ProjectEuler}
+
+some tekst 
+\begin{pythoncode}
+	def smallest_multiple(number):
+	    prod = 1
+	    lst = [i for i in range(2,number+1)]
+	    for divisor in lst:
+	        if divisor > 1:
+	            prod *= divisor
+	            for k, num in enumerate(lst):
+	                if (num % divisor) == 0:
+	                    lst[k] /= divisor
+	    return prod
+\end{pythoncode}
+
+Some text
+
+\begin{pythoncode}
+    from primesieve import generate_primes
+    from math import log
+
+    def smallest_multiple_fast(n):
+        prod = 1
+        for prime in generate_primes(n):
+            prod *= prime**int(log(n, prime))
+        return prod
+\end{pythoncode}
+
+% Naive:  64504.8793411 ms
+% Optimized:  96.9941442091 ms
+% Most optimized:  49.6431700899 ms

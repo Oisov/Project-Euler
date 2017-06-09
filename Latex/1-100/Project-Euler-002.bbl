@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Takahashi(2000)]{Takahashi}
+Daisuke Takahashi.
+\newblock A fast algorithm for computing large fibonacci numbers.
+\newblock \emph{Information Processing Letters}, 75\penalty0 (6):\penalty0 243
+  -- 246, 2000.
+\newblock ISSN 0020-0190.
+\newblock \url{http://www.math.tamu.edu/~snpolloc/math491_691/Takahashi00.pdf}.
+
+\end{thebibliography}

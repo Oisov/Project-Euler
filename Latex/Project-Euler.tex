@@ -1,0 +1,185 @@
+\documentclass[10pt]{article} % 5p gir 2 kolonner pr side. 1p gir 1 kolonne pr side.
+
+\usepackage[T1]{fontenc}
+\usepackage[]{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} % Tilpasning til norsk.
+%\usepackage[demo]{graphicx} % For ?? inkludere figurer.
+
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+
+\usepackage{amsmath,amsfonts,amssymb} % Ekstra matematikkfunksjoner.
+\allowdisplaybreaks[1]
+
+\DeclareMathOperator{\lcm}{lcm}
+\newcommand{\kortlinje}{\vspace{-0.25cm}}
+
+\usepackage{amsthm}
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index]
+
+\usepackage[dvipsnames*,
+		    svgnames]{xcolor}       % more colors
+
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usetikzlibrary{trees}
+    
+\usepackage{caption}
+% Disse kommandoene kan gj??re det enklere for LaTeX ?? plassere figurer og tabeller der du ??nsker.
+\usepackage{subcaption}
+
+\usepackage{fullpage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{siunitx} % Må inkluderes for blant annet å få tilgang til kommandoen \SI (korrekte måltall med enheter)
+\sisetup{exponent-product = \cdot}      % Prikk som multiplikasjonstegn (i steden for kryss).
+\sisetup{output-decimal-marker  =  {,}} % Komma som desimalskilletegn (i steden for punktum).
+\sisetup{separate-uncertainty = true}   % Pluss-minus-form på usikkerhet (i steden for parentes).
+\sisetup{table-number-alignment = right ,
+        table-format=2.3,
+        per-mode=symbol}
+\sisetup{math-micro=\text{µ},text-micro=µ}
+\usepackage{textcomp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{minted}
+\usemintedstyle{pastie}
+
+\newminted{python}{fontsize=\small}
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+
+\newenvironment{ProjectEuler}[2][]{%
+
+\setcounter{section}{#2}
+
+\addcontentsline{toc}{section}{Project Euler~#2:~#1}
+\ifstrempty{#1}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline = (current bounding box.east), outer sep = 0pt]
+\node[anchor = east, rectangle, fill = blue!20]
+{\strut Project Euler~#2};}}
+}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline = (current bounding box.east),outer sep = 0pt]
+\node[anchor = east, rectangle, fill = blue!20]
+{\strut \hypersetup{urlcolor = {}}\href{https://projecteuler.net/problem=#2}{Project Euler~#2:~#1}\hypersetup{urlcolor = cyan}};}}%
+}%
+\mdfsetup{innertopmargin=10pt, linecolor=blue!20,%
+linewidth = 2pt, topline = true,%
+frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+}
+\begin{mdframed}[]\relax%
+\label{PE-#2}}{\end{mdframed}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\figureautorefname{figur}  % Får hyperlenker til figurer på norsk
+\def\tableautorefname{tabell}   % Får hyperlenker til tabeller på norsk
+\def\equationautorefname{likning}
+
+% Centeres figures automagically
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
+
+			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Hyper references
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+            pdfmenubar=false,
+            pdfstartview={FitH},
+            linktoc = all,
+            urlcolor = purple,
+            citecolor = black,
+            linkcolor = {}}
+
+\usepackage[nameinlink]{cleveref}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bibliography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[numbers]{natbib}
+\usepackage{chapterbib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage{multicol}
+
+%Defines the linkcolor 
+\newcommand{\link}{NavyBlue}
+
+\usepackage[nameinlink]{cleveref}
+
+\creflabelformat{equation}{#2(\textcolor{\link}{#1})#3}
+\creflabelformat{table}{#2\textcolor{\link}{#1}#3}
+\creflabelformat{figure}{\!#2\textcolor{\link}{#1}#3}
+
+\title{Project Euler \\ - Prematurely optimized and Overengineered }
+\author{Øistein Søvik}
+
+\begin{document}
+
+\maketitle
+
+\cleardoublepage
+
+	\include{Preface}
+	
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+	  \include{1-100/Project-Euler-001}
+	
+	  \include{1-100/Project-Euler-002}
+	
+	  \include{1-100/Project-Euler-003}
+	
+	  \include{1-100/Project-Euler-004}
+	
+	  \include{1-100/Project-Euler-005}
+	
+%	  \include{1-100/Project-Euler-006}
+	
+	  \include{1-100/Project-Euler-007}
+	
+	  \include{1-100/Project-Euler-008}
+	
+	  \include{1-100/Project-Euler-009}
+	
+	  \include{1-100/Project-Euler-010}
+	
+	  \include{1-100/Project-Euler-013}
+
+\printindex
+
+\end{document}

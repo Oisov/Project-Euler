@@ -1,0 +1,1710 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ro",
+				"rolls_2_one\tfunction"
+			],
+			[
+				"ra",
+				"random\tstatement"
+			],
+			[
+				"wai",
+				"waiting_time\tstatement"
+			],
+			[
+				"word",
+				"word_dict\tstatement"
+			],
+			[
+				"file",
+				"filename\tstatement"
+			],
+			[
+				"squ",
+				"square_dict\tstatement"
+			],
+			[
+				"squa",
+				"square_dict\tstatement"
+			],
+			[
+				"anag",
+				"anagrams\tfunction"
+			],
+			[
+				"ana",
+				"anagrams\tstatement"
+			],
+			[
+				"anagra",
+				"anagram_squares\tfunction"
+			],
+			[
+				"sq",
+				"square_dict\tstatement"
+			],
+			[
+				"anagr",
+				"anagram_dicts\tfunction"
+			],
+			[
+				"an",
+				"anagrams\tstatement"
+			],
+			[
+				"def",
+				"defaultdict\tclass"
+			],
+			[
+				"di",
+				"digits\tparam"
+			],
+			[
+				"sum",
+				"sum_first_n_digits_2\tfunction"
+			],
+			[
+				"fil",
+				"filename\tparam"
+			],
+			[
+				"pri",
+				"print\tkeyword"
+			],
+			[
+				"num",
+				"num_2_prime\tstatement"
+			],
+			[
+				"Pri",
+				"PRIME_CHAR\tstatement"
+			],
+			[
+				"PRI",
+				"PRIME_CHAR\tstatement"
+			],
+			[
+				"find",
+				"find_anagrams_ole\tfunction"
+			],
+			[
+				"uni",
+				"unique_word_sum\tfunction"
+			],
+			[
+				"un",
+				"unique_word_sum\tfunction"
+			],
+			[
+				"prime",
+				"primes_upto\tfunction"
+			],
+			[
+				"primes",
+				"primesbelow\tfunction"
+			],
+			[
+				"sub",
+				"sub_lst\tforstmt"
+			],
+			[
+				"print",
+				"print_nested_list\tfunction"
+			],
+			[
+				"fie",
+				"filename\tparam"
+			],
+			[
+				"dict",
+				"dictionary\tforstmt"
+			],
+			[
+				"del",
+				"delete_index\tstatement"
+			],
+			[
+				"wor",
+				"word_len\tstatement"
+			],
+			[
+				"max",
+				"maxmin\tstatement"
+			],
+			[
+				"chi",
+				"chicken_bag\tstatement"
+			],
+			[
+				"gro",
+				"group_two"
+			],
+			[
+				"grou",
+				"group_one"
+			],
+			[
+				"std",
+				"std_of_sublists"
+			],
+			[
+				"weig",
+				"weights"
+			],
+			[
+				"nu",
+				"number_of_dinners"
+			],
+			[
+				"wei",
+				"weights\tstatement"
+			],
+			[
+				"we",
+				"weights\tstatement"
+			],
+			[
+				"gree",
+				"greedy_sort\tfunction"
+			],
+			[
+				"p",
+				"portions"
+			],
+			[
+				"opt",
+				"optimal_sort\tfunction"
+			],
+			[
+				"list",
+				"list_of_chickenbits\tparam"
+			],
+			[
+				"gr",
+				"groups\tstatement"
+			],
+			[
+				"greed",
+				"greedy_weights\tstatement"
+			],
+			[
+				"create",
+				"create_chicken_bag\tfunction"
+			],
+			[
+				"fill",
+				"fillets\tstatement"
+			],
+			[
+				"temp",
+				"temp_best_fillets\tstatement"
+			],
+			[
+				"dinn",
+				"dinner_four\tstatement"
+			],
+			[
+				"din",
+				"dinner_two\tforstmt"
+			],
+			[
+				"dinner",
+				"dinner_one\tforstmt"
+			],
+			[
+				"fille",
+				"fillets_not_two\tstatement"
+			],
+			[
+				"rem",
+				"remove_elements\tfunction"
+			],
+			[
+				"fi",
+				"fillets\tstatement"
+			],
+			[
+				"ls",
+				"lst_of_lst\tparam"
+			],
+			[
+				"lis",
+				"lists\tstatement"
+			],
+			[
+				"min",
+				"min_std\tstatement"
+			],
+			[
+				"perm",
+				"permutations\tclass"
+			],
+			[
+				"iter",
+				"itertools\tmodule"
+			],
+			[
+				"op",
+				"OPTIMAL_DINNER_WEIGHT\tstatement"
+			],
+			[
+				"remo",
+				"remove_fillet\tstatement"
+			],
+			[
+				"CH",
+				"CHICKEN_WEIGHT_TOTAL\tstatement"
+			],
+			[
+				"ch",
+				"chicken_weight\tstatement"
+			],
+			[
+				"C",
+				"CHICKEN_WEIGHT_LO\tstatement"
+			],
+			[
+				"kjelle",
+				"kjellerstyret"
+			],
+			[
+				"BEWL",
+				"BELOW_100\tstatement"
+			],
+			[
+				"unit",
+				"UNIT_KEYS\tstatement"
+			],
+			[
+				"Bel",
+				"BELOW_100_Riksmaal\tstatement"
+			],
+			[
+				"four",
+				"fours"
+			],
+			[
+				"bas",
+				"base\tparam"
+			],
+			[
+				"fo",
+				"fouriest\tstatement"
+			],
+			[
+				"fou",
+				"fours"
+			],
+			[
+				"cout",
+				"count_char\tfunction"
+			],
+			[
+				"co",
+				"count_char\tfunction"
+			],
+			[
+				"int",
+				"int_2_base\tfunction"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"fac",
+				"fac_2\tstatement"
+			],
+			[
+				"pr",
+				"print\tkeyword"
+			],
+			[
+				"pal",
+				"palindrome_product_4\tfunction"
+			],
+			[
+				"div",
+				"divisor\tstatement"
+			],
+			[
+				"is",
+				"isprime\tfunction"
+			],
+			[
+				"BIG",
+				"BIG_NUM\tstatement"
+			],
+			[
+				"_",
+				"_BIG_PRIME_SET\tstatement"
+			],
+			[
+				"SMA",
+				"SMALL_PRIMES\tstatement"
+			],
+			[
+				"_SM",
+				"_SMALL_PRIME_LIST\tstatement"
+			],
+			[
+				"Sm",
+				"SMALL_PRIME\tstatement"
+			],
+			[
+				"Big",
+				"BIG_NUM\tstatement"
+			],
+			[
+				"sm",
+				"small_factors\tfunction"
+			],
+			[
+				"_BiG",
+				"_BIG_PRIME_SET\tstatement"
+			],
+			[
+				"SMALL",
+				"_SMALL_PRIME_LIST"
+			],
+			[
+				"LARG",
+				"LARGE_PRIME_LIST"
+			],
+			[
+				"LAR",
+				"LARGE_PRIME_LIST"
+			],
+			[
+				"big",
+				"_BIG_PRIME_SET"
+			],
+			[
+				"_pri",
+				"_primeset\tstatement"
+			],
+			[
+				"str",
+				"string_copy_cost\tfunction"
+			],
+			[
+				"long",
+				"longest_common_substring\tfunction"
+			],
+			[
+				"copy",
+				"copy_string\tstatement"
+			],
+			[
+				"hei",
+				"height_map"
+			],
+			[
+				"le",
+				"letter_padding\tstatement"
+			],
+			[
+				"B",
+				"Basin\tclass"
+			],
+			[
+				"b",
+				"basin"
+			],
+			[
+				"col",
+				"column_padding\tstatement"
+			],
+			[
+				"mat",
+				"matrix\tparam"
+			],
+			[
+				"siz",
+				"sizes"
+			],
+			[
+				"let",
+				"letter_padding\tstatement"
+			],
+			[
+				"cre",
+				"create_test_file\tfunction"
+			],
+			[
+				"ran",
+				"random_integers\tstatement"
+			],
+			[
+				"m",
+				"matrix\tparam"
+			],
+			[
+				"ot",
+				"output\tstatement"
+			],
+			[
+				"len",
+				"length\tstatement"
+			],
+			[
+				"cla",
+				"class_type\tparam"
+			],
+			[
+				"crea",
+				"create_list_of_cells"
+			],
+			[
+				"neig",
+				"neighboors_list"
+			],
+			[
+				"nei",
+				"neighboors"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"cor",
+				"coordinates"
+			],
+			[
+				"a",
+				"ALPHABETH\tstatement"
+			],
+			[
+				"q",
+				"quotient\tstatement"
+			],
+			[
+				"alp",
+				"ALPHABETH_len\tstatement"
+			],
+			[
+				"al",
+				"ALPHABETH_len\tstatement"
+			],
+			[
+				"he",
+				"height_map\tstatement"
+			],
+			[
+				"Mew",
+				"Mew2King"
+			],
+			[
+				"rev",
+				"reverse"
+			],
+			[
+				"boar",
+				"board_tile\tstatement"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"boa",
+				"board_tile\tstatement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "------------------------\n        START\n------------------------\n\nHome v0\n      IEM - $ 999 - Shure SE846\nDAC / amp - $ 599 - Chord Mojo\n\nSchool\nHeadphone - $ 349 - Bose QC 35\n\nClearArmor 141001 Safety < I want \n\n------------------------\n        MIDDLE GAME\n------------------------\n\n     Pads - $  49 - JVC HAM55X (Pads for HA-SZ2000)\nHeadphone - $ 200 - HA-SZ2000\n\n      IEM - $ 230 - Sony MDR EX800ST/ 7550\n      IEM - $  89 - Sony xb90ex\n\nHome v1\nHeadphone - $  ??? - \n      DAC - $  249 - Shiit Modi 2 Multibit\n      Amp - $  289 - iFi iCAN SE\n\nPortable \n      IEM - $ 999 - Shure SE846\n      DAP - $ ??? - (499 - Cayin’s i5 DAP) \n\nWork\nHeadphone - $ ??? - ??? (QC 35 or bass)\n  DAC/AMP - $ 599 - Chord Mojo\n\n Leopold FC660C\n\n------------------------\n        END GAME\n------------------------\n\nHome v1 (Surround)\n BP + Dac - $ 1500 - Oppo UDP-205 (Blueray) \n Speakers - $ ???? - ???? (The Marten Design Django L:) \nSubwoofer - $ ???? - MiniMe P12 \n\nHome v2\nHeadphone - $ ???? - (LCD-X, Ether Flow, LCD 4, Utopia, Abyss, Stax 009)\n      DAC - $ 1299 - Shiit Gungnir Multibit (balanced)\n      AMP - $ 1699 - iFi iCAN Pro headphone amplifier (balanced)\n\nWork\nHeadphone - $ ??? - ???\n      DAC - $ 249 - Shiit Modi Multibit\n      Amp - $ 289 - iFi iCAN SE headphone amplifier\n\nPortable\n      IEM - $ 999 - Shure \n  DAC/AMP - $ 599 - Mojo \n\n------------------------\n------------------------\nhttp://www.keyboard-layout-editor.com/##@@_a:6%3B&=Esc&_a:0%3B&=!%0A1%0A%0A%0AF1&=%22%0A2%0A%0A%0AF2&=%23%0A3%0A%0A%0AF3&=$%0A4%0A%0A%0AF4&=%25%0A5%0A%0A%0AF5&=%2F&%0A6%0A%0A%0AF6&=%60%0A7%0A%0A%0AF7&=(%0A8%0A%0A%0AF8&=)%0A9%0A%0A%0AF9&=%0A0%0A%0A%0AF10&=%2F=%0A-%0A%0A%0AF11&=~%0A%5E%0A%0A%0AF12&=%7C%0A%C2%A5%0A%0A%0AIns&_a:2%3B&=BS%0A%0A%0A%0ADel%3B&@_w:1.5%3B&=Tab%0A%0A%0A%0ACaps&_a:4%3B&=Q&=W&=E&=R&=T&=Y&=U&_a:0%3B&=I%0A%0A%0A%0APSc%2F%2FSRq&=O%0A%0A%0A%0AScrLk&_a:4%3B&=P&_a:0%3B&=%60%0A%2F@%0A%0A%0A%E2%86%91&_a:4%3B&=%7B%0A%5B&_x:0.25&w:1.25&h:2&w2:1.5&h2:1&x2:-0.25%3B&=Enter%3B&@_a:6&w:1.75%3B&=Control&_a:0%3B&=A%0A%0A%0A%0AVol%2F_Dn&=S%0A%0A%0A%0AVol%2F_Up&=D%0A%0A%0A%0AMute&=F%0A%0A%0A%0AEject&_a:4%3B&=G&=H&=J&=K&=L&_a:0%3B&=+%0A%2F%3B%0A%0A%0A%E2%86%90&=*%0A%2F:%0A%0A%0A%E2%86%92&_a:4%3B&=%7D%0A%5D%3B&@_a:6&w:2%3B&=Shift&_a:4%3B&=Z&=X&=C&=V&=B&=N&=M&_a:0%3B&=%3C%0A,%0A%0A%0AEnd&=%3E%0A.%0A%0A%0APdDn&=%3F%0A%2F%2F%0A%0A%0A%E2%86%93&_a:4%3B&=%0A%0A%0A%0A%0A%0A%2F_%0A%0A%0A%0A%5C&_a:2&f:6%3B&=%E2%86%91%0A%0A%0A%0AShift&_a:6&f:3%3B&=Shift%3B&@=Fn&_x:0.25%3B&=HK&_f:8%3B&=%E2%97%8A&_f:3%3B&=Alt&_a:7&f:5%3B&=%7B%EF%BC%BC%7D&_f:3&w:2.5%3B&=&=&_a:6%3B&=Kana&=Alt&=Fn&_x:0.25&a:2&f:6%3B&=%E2%86%90%0A%0A%0A%0ADel&=%E2%86%93%0A%0A%0A%0A%E2%97%8A&=%E2%86%92%0A%0A%0A%0ACtrl\n\nhttp://www.keyboard-layout-editor.com/##@@_c=%23ff7f22&a:6%3B&=Esc&_a:0%3B&=!%0A1%0A%0A%0AF1&=%22%0A2%0A%0A%0AF2&=%23%0A3%0A%0A%0AF3&=$%0A4%0A%0A%0AF4&=%25%0A5%0A%0A%0AF5&=%2F&%0A6%0A%0A%0AF6&=%60%0A7%0A%0A%0AF7&=(%0A8%0A%0A%0AF8&=)%0A9%0A%0A%0AF9&=%0A0%0A%0A%0AF10&=%2F=%0A-%0A%0A%0AF11&=~%0A%5E%0A%0A%0AF12&=%7C%0A%C2%A5%0A%0A%0AIns&_a:2%3B&=BS%0A%0A%0A%0ADel%3B&@_w:1.5%3B&=Tab%0A%0A%0A%0ACaps&_c=%23cccccc&a:4%3B&=%C3%85&=%2F%3B&=%2F:&=P&=Y&=F&=G&_a:0%3B&=C%0A%0A%0A%0APSc%2F%2FSRq&=R%0A%0A%0A%0AScrLk&_a:4%3B&=L&_a:0%3B&=*%0A%0A%0A%0A%E2%86%91%0A%0A,&_a:4%3B&=%5E%0A%0A%0A%0A%0A%0A..%0A%0A%0A~&_x:0.25&c=%237b7871&w:1.25&h:2&w2:1.5&h2:1&x2:-0.25%3B&=Enter%3B&@_c=%23ff7f22&a:6&w:1.75%3B&=Control&_c=%23cccccc&a:0%3B&=A%0A%0A%0A%0AVol%2F_Dn&=O%0A%0A%0A%0AVol%2F_Up&=E%0A%0A%0A%0AMute&=U%0A%0A%0A%0AEject&_a:4%3B&=I&=D&=H&=T&=N&_a:0%3B&=S%0A%2F%3B%0A%0A%0A%E2%86%90&=%0A-%0A%0A%0A%E2%86%92%0A%0A%2F_&_a:5%3B&=%0A%3C%0A%0A%0A%0A%0A%3E%3B&@_c=%23ff7f22&a:6&w:2%3B&=Shift&_c=%23cccccc&a:4%3B&=%C3%98&=%C3%86&=Q&=J&=K&=X&=B&_a:0%3B&=M%0A%0A%0A%0AEnd&=W%0A%0A%0A%0APdDn&=V%0A%0A%0A%0A%E2%86%93&_a:4%3B&=Z&_c=%237b7871&a:2&f:6%3B&=%E2%86%91%0A%0A%0A%0AShift&_a:6&f:3%3B&=Shift%3B&@=Fn&_x:0.25%3B&=HK&_f:8%3B&=%E2%97%8A&_f:3%3B&=Alt&_a:7&f:5%3B&=%7B%EF%BC%BC%7D&_f:3&w:2.5%3B&=&=&_a:6%3B&=Kana&=Alt&=Fn&_x:0.25&a:2&f:6%3B&=%E2%86%90%0A%0A%0A%0ADel&=%E2%86%93%0A%0A%0A%0A%E2%97%8A&=%E2%86%92%0A%0A%0A%0ACtrl\n\nhttp://www.keyboard-layout-editor.com/##@@_c=%237b7871&a:6%3B&=Esc&_c=%23ff7f22&a:0%3B&=!%0A1%0A%0A%0AF1&=%22%0A2%0A%0A%0AF2&=%23%0A3%0A%0A%0AF3&=$%0A4%0A%0A%0AF4&=%25%0A5%0A%0A%0AF5&=%2F&%0A6%0A%0A%0AF6&=%60%0A7%0A%0A%0AF7&=(%0A8%0A%0A%0AF8&=)%0A9%0A%0A%0AF9&=%0A0%0A%0A%0AF10&=%2F=%0A-%0A%0A%0AF11&=~%0A%5E%0A%0A%0AF12&_c=%237b7871%3B&=%7C%0A%C2%A5%0A%0A%0AIns&_a:2%3B&=BS%0A%0A%0A%0ADel%3B&@_c=%23ff7f22&w:1.5%3B&=Tab%0A%0A%0A%0ACaps&_c=%23cccccc&a:4%3B&=%C3%85&=%2F%3B&=%2F:&=P&=Y&=F&=G&_a:0%3B&=C%0A%0A%0A%0APSc%2F%2FSRq&=R%0A%0A%0A%0AScrLk&_a:4%3B&=L&_a:0%3B&=*%0A%0A%0A%0A%E2%86%91%0A%0A,&_a:4%3B&=%5E%0A%0A%0A%0A%0A%0A..%0A%0A%0A~&_x:0.25&c=%237b7871&w:1.25&h:2&w2:1.5&h2:1&x2:-0.25%3B&=Enter%3B&@_c=%23ff7f22&a:6&w:1.75%3B&=Control&_c=%23cccccc&a:0%3B&=A%0A%0A%0A%0AVol%2F_Dn&=O%0A%0A%0A%0AVol%2F_Up&=E%0A%0A%0A%0AMute&=U%0A%0A%0A%0AEject&_a:4%3B&=I&=D&=H&=T&=N&_a:0%3B&=S%0A%2F%3B%0A%0A%0A%E2%86%90&=%0A-%0A%0A%0A%E2%86%92%0A%0A%2F_&_a:5%3B&=%0A%3C%0A%0A%0A%0A%0A%3E%3B&@_c=%23ff7f22&a:6&w:2%3B&=Shift&_c=%23cccccc&a:4%3B&=%C3%98&=%C3%86&=Q&=J&=K&=X&=B&_a:0%3B&=M%0A%0A%0A%0AEnd&=W%0A%0A%0A%0APdDn&=V%0A%0A%0A%0A%E2%86%93&_a:4%3B&=Z&_c=%237b7871&a:2&f:6%3B&=%E2%86%91%0A%0A%0A%0AShift&_c=%23ff7f22&a:6&f:3%3B&=Shift%3B&@_c=%237b7871%3B&=Fn&_x:0.25%3B&=HK&_f:8%3B&=%E2%97%8A&_c=%23ff7f22&f:3%3B&=Alt&_c=%237b7871&a:7&f:5%3B&=%7B%EF%BC%BC%7D&_f:3&w:2.5%3B&=&=&_c=%23ff7f22&a:6%3B&=Kana&=Alt&=Fn&_x:0.25&c=%237b7871&a:2&f:6%3B&=%E2%86%90%0A%0A%0A%0ADel&=%E2%86%93%0A%0A%0A%0A%E2%97%8A&=%E2%86%92%0A%0A%0A%0ACtrl\n\nhttp://www.keyboard-layout-editor.com/##@@_c=%237b7871&a:6%3B&=Esc&_c=%23ff7f22&a:0%3B&=!%0A1%0A%0A%0AF1&=%22%0A2%0A%0A%0AF2&=%23%0A3%0A%0A%0AF3&_c=%237b7871%3B&=$%0A4%0A%0A%0AF4&_c=%23ff7f22%3B&=%25%0A5%0A%0A%0AF5&=%2F&%0A6%0A%0A%0AF6&=%60%0A7%0A%0A%0AF7&=(%0A8%0A%0A%0AF8&_c=%237b7871%3B&=)%0A9%0A%0A%0AF9&_c=%23ff7f22%3B&=%0A0%0A%0A%0AF10&=%2F=%0A-%0A%0A%0AF11&=~%0A%5E%0A%0A%0AF12&_c=%237b7871%3B&=%7C%0A%C2%A5%0A%0A%0AIns&_a:2%3B&=BS%0A%0A%0A%0ADel%3B&@_c=%23ff7f22&w:1.5%3B&=Tab%0A%0A%0A%0ACaps&_c=%23cccccc&a:4%3B&=%C3%85&=%2F%3B&=%2F:&=P&=Y&=F&=G&_a:0%3B&=C%0A%0A%0A%0APSc%2F%2FSRq&=R%0A%0A%0A%0AScrLk&_a:4%3B&=L&_a:0%3B&=*%0A%0A%0A%0A%E2%86%91%0A%0A,&_a:4%3B&=%5E%0A%0A%0A%0A%0A%0A..%0A%0A%0A~&_x:0.25&c=%237b7871&w:1.25&h:2&w2:1.5&h2:1&x2:-0.25%3B&=Enter%3B&@_c=%23ff7f22&a:6&w:1.75%3B&=Control&_c=%23cccccc&a:0%3B&=A%0A%0A%0A%0AVol%2F_Dn&=O%0A%0A%0A%0AVol%2F_Up&=E%0A%0A%0A%0AMute&=U%0A%0A%0A%0AEject&_a:4%3B&=I&=D&=H&=T&=N&_a:0%3B&=S%0A%2F%3B%0A%0A%0A%E2%86%90&=%0A-%0A%0A%0A%E2%86%92%0A%0A%2F_&_a:5%3B&=%0A%3C%0A%0A%0A%0A%0A%3E%3B&@_c=%23ff7f22&a:6&w:2%3B&=Shift&_c=%23cccccc&a:4%3B&=%C3%98&=%C3%86&=Q&=J&=K&=X&=B&_a:0%3B&=M%0A%0A%0A%0AEnd&=W%0A%0A%0A%0APdDn&=V%0A%0A%0A%0A%E2%86%93&_a:4%3B&=Z&_c=%237b7871&a:2&f:6%3B&=%E2%86%91%0A%0A%0A%0AShift&_c=%23ff7f22&a:6&f:3%3B&=Shift%3B&@_c=%237b7871%3B&=Fn&_x:0.25&c=%23ff7f22%3B&=HK&_c=%237b7871&f:8%3B&=%E2%97%8A&_c=%23ff7f22&f:3%3B&=Alt&_c=%237b7871&a:7&f:5%3B&=%7B%EF%BC%BC%7D&_f:3&w:2.5%3B&=&=&_c=%23ff7f22&a:6%3B&=Kana&_c=%237b7871%3B&=Alt&_c=%23ff7f22%3B&=Fn&_x:0.25&c=%237b7871&a:2&f:6%3B&=%E2%86%90%0A%0A%0A%0ADel&=%E2%86%93%0A%0A%0A%0A%E2%97%8A&=%E2%86%92%0A%0A%0A%0ACtrl\n\n68% - http://www.keyboard-layout-editor.com/##@@_c=%237b7871&a:6%3B&=Esc&_c=%23ff7f22&a:0%3B&=!%0A1%0A%0A%0AF1&=%22%0A2%0A%0A%0AF2&=%23%0A3%0A%0A%0AF3&_c=%237b7871%3B&=$%0A4%0A%0A%0AF4&=%25%0A5%0A%0A%0AF5&_c=%23ff7f22%3B&=%2F&%0A6%0A%0A%0AF6&=%60%0A7%0A%0A%0AF7&=(%0A8%0A%0A%0AF8&_c=%237b7871%3B&=)%0A9%0A%0A%0AF9&=%0A0%0A%0A%0AF10&_c=%23ff7f22%3B&=%2F=%0A-%0A%0A%0AF11&=~%0A%5E%0A%0A%0AF12&=%7C%0A%C2%A5%0A%0A%0AIns&_c=%237b7871&a:2%3B&=BS%0A%0A%0A%0ADel%3B&@_c=%23ff7f22&w:1.5%3B&=Tab%0A%0A%0A%0ACaps&_c=%23cccccc&a:4%3B&=%C3%85&=%2F%3B&=%2F:&=P&=Y&=F&=G&_a:0%3B&=C%0A%0A%0A%0APSc%2F%2FSRq&=R%0A%0A%0A%0AScrLk&_a:4%3B&=L&_a:0%3B&=*%0A%0A%0A%0A%E2%86%91%0A%0A,&_a:4%3B&=%5E%0A%0A%0A%0A%0A%0A..%0A%0A%0A~&_x:0.25&c=%237b7871&w:1.25&h:2&w2:1.5&h2:1&x2:-0.25%3B&=Enter%3B&@_c=%23ff7f22&a:6&w:1.75%3B&=Control&_c=%23cccccc&a:0%3B&=A%0A%0A%0A%0AVol%2F_Dn&=O%0A%0A%0A%0AVol%2F_Up&=E%0A%0A%0A%0AMute&=U%0A%0A%0A%0AEject&_a:4%3B&=I&=D&=H&=T&=N&_a:0%3B&=S%0A%2F%3B%0A%0A%0A%E2%86%90&=%0A-%0A%0A%0A%E2%86%92%0A%0A%2F_&_a:5%3B&=%0A%3C%0A%0A%0A%0A%0A%3E%3B&@_c=%23ff7f22&a:6&w:2%3B&=Shift&_c=%23cccccc&a:4%3B&=%C3%98&=%C3%86&=Q&=J&=K&=X&=B&_a:0%3B&=M%0A%0A%0A%0AEnd&=W%0A%0A%0A%0APdDn&=V%0A%0A%0A%0A%E2%86%93&_a:4%3B&=Z&_c=%23ff7f22&a:2&f:6%3B&=%E2%86%91%0A%0A%0A%0AShift&_c=%237b7871&a:6&f:3%3B&=Shift%3B&@=Fn&_x:0.25%3B&=HK&_f:8%3B&=%E2%97%8A&_f:3%3B&=Alt&_a:7&f:5%3B&=%7B%EF%BC%BC%7D&_c=%23cccccc&f:3&w:2.5%3B&=&_c=%237b7871%3B&=&_a:6%3B&=Kana&=Alt&=Fn&_x:0.25&c=%23ff7f22&a:2&f:6%3B&=%E2%86%90%0A%0A%0A%0ADel&=%E2%86%93%0A%0A%0A%0A%E2%97%8A&=%E2%86%92%0A%0A%0A%0ACtrl\n\n40% - http://www.keyboard-layout-editor.com/##@@_a:7%3B&=Tab&=%C3%85&_a:5%3B&=%2F%3B%0A%0A%0A%0A%0A%0A.&=%2F:%0A%0A%0A%0A%0A%0A.&_a:7%3B&=P&=Y&=F&=G&=C&=R&=L&=Back%20Space%3B&@=Ctrl&=A&=O&=E&=U&=I&=D&=H&=T&=N&=S&=Z%3B&@=Shift&=%C3%98&=%C3%86&=Q&=J&=K&=X&=B&=M&=W&=V&=Enter%3B&@=Esc&=Ctrl&=Alt&=Super&=%2F&dArr%2F%3B&_w:2%3B&=&=%2F&uArr%2F%3B&=%2F&larr%2F%3B&=%2F&darr%2F%3B&=%2F&uarr%2F%3B&=%2F&rarr%2F\n\nhypotemoose\n\nThe Pilot Color Neox (colored led) + rotring 600",
+			"settings":
+			{
+				"buffer_size": 9270,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/oistes/Documents/Python Scripts/fruit",
+			"settings":
+			{
+				"buffer_size": 942,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nAnaconda\n--------\n\n  \n                                                            |\n                _` |  __ \\    _` |   __|   _ \\   __ \\    _` |   _` |\n               (   |  |   |  (   |  (     (   |  |   |  (   |  (   |\n              \\__,_| _|  _| \\__,_| \\___| \\___/  _|  _| \\__,_| \\__,_|\n                                       The Sublime Text 3 Python IDE\n  \n  \n  Anaconda v2.1.18\n  ================\n  \n  Welcome to new anaconda v2.1.18, what do you can find in this minor release?\n  \n  ## Rollbacks\n      - Rollback latest Jedi update as it introduced some performance issues\n\n  \n                                                            |\n                _` |  __ \\    _` |   __|   _ \\   __ \\    _` |   _` |\n               (   |  |   |  (   |  (     (   |  |   |  (   |  (   |\n              \\__,_| _|  _| \\__,_| \\___| \\___/  _|  _| \\__,_| \\__,_|\n                                       The Sublime Text 3 Python IDE\n  \n  \n  Anaconda v2.1.17\n  ================\n  \n  Welcome to new anaconda v2.1.17, what do you can find in this minor release?\n  \n  ## Improvements\n      - Updated PyCodeStyle to v2.3.1\n      - Updated Jedi to 0.10.0 (82d165a7)\n\n  \n                                                            |\n                _` |  __ \\    _` |   __|   _ \\   __ \\    _` |   _` |\n               (   |  |   |  (   |  (     (   |  |   |  (   |  (   |\n              \\__,_| _|  _| \\__,_| \\___| \\___/  _|  _| \\__,_| \\__,_|\n                                       The Sublime Text 3 Python IDE\n  \n  \n  Anaconda v2.1.16\n  ================\n  \n  Welcome to new anaconda v2.1.16, what do you can find in this minor release?\n  \n  ## Fixes\n      - Fixed performance degradation in macOS when long files where being edited #620, #558\n  \n  ## Improvements\n      - Show one message per line on phantoms linting support\n      - Improved integration with Kite plugin\n\n\nAutoPEP8\n--------\n\n  AutoPEP8 1.3.4 (2016/03/27):\n      - Removed 'aggressive' option from the configuration.\n      * autopep8 1.1 -> 1.2.2\n      * pep8 1.5.7 -> 2.3.1\n  \n  AutoPEP8 1.3.3 (2015/10/27):\n      * fix issue with double 'on-save' formatting in ST3.\n  \n  AutoPEP8 1.3.2 (2015/10/18):\n      * fix issue with user config on windows platform.\n  \n  AutoPEP8 1.3.1 (2015/09/27):\n      + new option 'debug' was added\n  \n  AutoPEP8 1.3 (2015/05/08):\n      * autopep8 1.1 -> 1.1.1\n      * pep8 1.5.7 -> 1.6.2\n      * fixed issue with white spaces in autopep8 option values(#35)\n      * fixed grammar in error messages(#34)\n  \n  AutoPEP8 1.2 (2015/02/01):\n      * autopep8 1.0.4 -> 1.1\n      * changed sidebar and context menu layout\n      * fixed issue with formating in case all tabs are closed(#30)\n      * fixed issue with encoding(#31)\n      - Option \"file_menu_behaviour\" was removed\n  \n  AutoPEP8 1.1.3 (2014/10/12):\n      * autopep8 1.0.3 -> 1.0.4\n  \n  AutoPEP8 1.1.2 (2014/07/01):\n      * fixed issue(#28): ignore selected block during autosave process.\n      * autopep8 1.0.2 -> 1.0.3\n  \n  AutoPEP8 1.1.1 (2014/06/25):\n      * fixed issue(#27): plugin doesn't work properly in ST2.\n  \n  AutoPEP8 1.1 (2014/06/10):\n      - options \"max-threads\" and \"show_empty_panel\" were removed;\n      + added new option \"indent-size\" to specify number of spaces per indent level;\n      * option 'show_panel' was renamed to 'show_error_panel';\n      * autopep8 -> 1.0.2;\n      * pep8 -> 1.5.7;\n      * fixed issue with autosave mode;\n  \n  AutoPEP8 1.0.6 (2013/12/24):\n      + added option 'avoid_new_line_in_select_mode' to remove last empty line in select mode\n  \n  AutoPEP8 1.0.5 (2013/11/17):\n      * autopep8 -> 0.9.6\n      - \"verbose\" option was removed from the settings\n  \n  AutoPEP8 1.0.4 (2013/08/04):\n  + different behaviour for right click context menu (issue #22)\n      Option \"file_menu_behaviour\":\n          \"always\": menu appears always, even folder doesn't contain *.py files\n          \"never\":  menu never appears\n          \"ifneed\": default value, menu appears only if path or childs contain *.py file\n      Option \"file_menu_search_depth\" (default 3) define max search depth for \"ifneed\" mode\n  * pep8 -> 1.4.6\n  * autopep8 -> 0.9.2\n  \n  AutoPEP8 1.0.3 (2013/06/07):\n  * fix issue with Win7 in ST3\n  \n  AutoPEP8 1.0:\n  + support ST3\n  + support per-project settings (https://github.com/wistful/SublimeAutoPEP8/blob/master/Readme.md#per-project-settings)\n  + show unfixed errors in the output panel\n  + syntax can be provided by settings (`syntax_list` option)\n  + use threads to avoid freezing sublime\n  * fix issue with `format_on_save` option\n  + added `aggressive` option\n  * change default values of `verbose` and `ignore` options\n  \n  AutoPEP8 0.9.3:\n  + support ST3\n  * change list options in the config\n  \n  AutoPEP8 0.9.2:\n  + Initial support for ST3. (thanks dnatag)\n  * update pep8.py to version 1.4.6a0\n  * update autopep8.py to version 0.8.7\n  \n  AutoPEP8 0.9.1:\n  * fix conflicts with SublimeLinter plugin\n  \n  AutoPEP8 0.9:\n  * use autopep8.py module instead of spawn the process\n  + improve speed of formatting\n  \n  AutoPEP8 0.8:\n  * fixed issue with exception while removing open file\n  * update pep8.py to version 1.4.2a0\n  * update autopep8.py to version 0.8.6\n  \n  AutoPEP8 0.7:\n  + autoformat on save\n  + sidebar menu\n  + autoformat/preview selected text\n  - cursor and scroll position are lost after \"Format Code\"\n  - encoding issue\n\n\nLaTeXTools\n----------\n\n  LaTeXTools Plugin version 3.13.5 (2017-03-31) changelog:\n  \n  Bugfixes:\n  - Fix a bug, which disabled the cite command if `\\nobibliography*` was present in the document (#1062)\n\n  LaTeXTools Plugin version 3.13.4 (2017-03-30) changelog:\n  \n  Bugfixes:\n  - Fix a bug, which disabled \"new bibliography\" (#1060)\n\n  LaTeXTools Plugin version 3.13.3 (2017-03-23) changelog:\n  \n  Bugfixes:\n  - Disabled cache_on_load and cache_on_save by default (#1056, #1056)\n\n  LaTeXTools Plugin version 3.13.2 (2017-03-22) changelog:\n  \n  Bugfixes:\n  - Fix a bug, which throws an error in Sublime Text 2 (#1054)\n\n  LaTeXTools Plugin version 3.13.1 (2017-03-22) changelog:\n  \n  Features:\n  \n  - Migrate documentation to readthedocs (https://latextools.readthedocs.io)\n\n  LaTeXTools Plugin version 3.13.0 (2017-03-22) changelog:\n  \n  Features:\n  \n  - Support for the import package\n  - TOC quickpanel now shows just the current document when using (`C-r`)\n  - Uses analysis for ref / cite commands and better caching\n  - Improved fill all completions for large files\n  - %!TEX directives now override settings in all circumstances\n  \n  Bugfixes:\n  \n  - Improved display of available executables in system check\n  - Numerous small issues have been fixed\n\n  LaTeXTools Plugin version 3.12.16 (2017-02-08) changelog:\n  \n  Bugfixes:\n  - Fixed a too large math preview, if the installed ghostscript version is older than 9.14 (#999)\n\n\nAutoPEP8\n--------\n\n  AutoPEP8 1.3.6 (2016/04/13):\n      * Disable debug output by default.\n  \n  AutoPEP8 1.3.5 (2016/04/13):\n      * fixed issue with missed argparse package in ST2.\n      + added logging\n  \n  AutoPEP8 1.3.4 (2016/03/27):\n      - Removed 'aggressive' option from the configuration.\n      * autopep8 1.1 -> 1.2.2\n      * pep8 1.5.7 -> 2.3.1\n  \n  AutoPEP8 1.3.3 (2015/10/27):\n      * fix issue with double 'on-save' formatting in ST3.\n  \n  AutoPEP8 1.3.2 (2015/10/18):\n      * fix issue with user config on windows platform.\n  \n  AutoPEP8 1.3.1 (2015/09/27):\n      + new option 'debug' was added\n  \n  AutoPEP8 1.3 (2015/05/08):\n      * autopep8 1.1 -> 1.1.1\n      * pep8 1.5.7 -> 1.6.2\n      * fixed issue with white spaces in autopep8 option values(#35)\n      * fixed grammar in error messages(#34)\n  \n  AutoPEP8 1.2 (2015/02/01):\n      * autopep8 1.0.4 -> 1.1\n      * changed sidebar and context menu layout\n      * fixed issue with formating in case all tabs are closed(#30)\n      * fixed issue with encoding(#31)\n      - Option \"file_menu_behaviour\" was removed\n  \n  AutoPEP8 1.1.3 (2014/10/12):\n      * autopep8 1.0.3 -> 1.0.4\n  \n  AutoPEP8 1.1.2 (2014/07/01):\n      * fixed issue(#28): ignore selected block during autosave process.\n      * autopep8 1.0.2 -> 1.0.3\n  \n  AutoPEP8 1.1.1 (2014/06/25):\n      * fixed issue(#27): plugin doesn't work properly in ST2.\n  \n  AutoPEP8 1.1 (2014/06/10):\n      - options \"max-threads\" and \"show_empty_panel\" were removed;\n      + added new option \"indent-size\" to specify number of spaces per indent level;\n      * option 'show_panel' was renamed to 'show_error_panel';\n      * autopep8 -> 1.0.2;\n      * pep8 -> 1.5.7;\n      * fixed issue with autosave mode;\n  \n  AutoPEP8 1.0.6 (2013/12/24):\n      + added option 'avoid_new_line_in_select_mode' to remove last empty line in select mode\n  \n  AutoPEP8 1.0.5 (2013/11/17):\n      * autopep8 -> 0.9.6\n      - \"verbose\" option was removed from the settings\n  \n  AutoPEP8 1.0.4 (2013/08/04):\n  + different behaviour for right click context menu (issue #22)\n      Option \"file_menu_behaviour\":\n          \"always\": menu appears always, even folder doesn't contain *.py files\n          \"never\":  menu never appears\n          \"ifneed\": default value, menu appears only if path or childs contain *.py file\n      Option \"file_menu_search_depth\" (default 3) define max search depth for \"ifneed\" mode\n  * pep8 -> 1.4.6\n  * autopep8 -> 0.9.2\n  \n  AutoPEP8 1.0.3 (2013/06/07):\n  * fix issue with Win7 in ST3\n  \n  AutoPEP8 1.0:\n  + support ST3\n  + support per-project settings (https://github.com/wistful/SublimeAutoPEP8/blob/master/Readme.md#per-project-settings)\n  + show unfixed errors in the output panel\n  + syntax can be provided by settings (`syntax_list` option)\n  + use threads to avoid freezing sublime\n  * fix issue with `format_on_save` option\n  + added `aggressive` option\n  * change default values of `verbose` and `ignore` options\n  \n  AutoPEP8 0.9.3:\n  + support ST3\n  * change list options in the config\n  \n  AutoPEP8 0.9.2:\n  + Initial support for ST3. (thanks dnatag)\n  * update pep8.py to version 1.4.6a0\n  * update autopep8.py to version 0.8.7\n  \n  AutoPEP8 0.9.1:\n  * fix conflicts with SublimeLinter plugin\n  \n  AutoPEP8 0.9:\n  * use autopep8.py module instead of spawn the process\n  + improve speed of formatting\n  \n  AutoPEP8 0.8:\n  * fixed issue with exception while removing open file\n  * update pep8.py to version 1.4.2a0\n  * update autopep8.py to version 0.8.6\n  \n  AutoPEP8 0.7:\n  + autoformat on save\n  + sidebar menu\n  + autoformat/preview selected text\n  - cursor and scroll position are lost after \"Format Code\"\n  - encoding issue\n\n  AutoPEP8 1.3.6 (2016/04/13):\n      * Disable debug output by default.\n  \n  AutoPEP8 1.3.5 (2016/04/13):\n      * fixed issue with missed argparse package in ST2.\n      + added logging\n  \n  AutoPEP8 1.3.4 (2016/03/27):\n      - Removed 'aggressive' option from the configuration.\n      * autopep8 1.1 -> 1.2.2\n      * pep8 1.5.7 -> 2.3.1\n  \n  AutoPEP8 1.3.3 (2015/10/27):\n      * fix issue with double 'on-save' formatting in ST3.\n  \n  AutoPEP8 1.3.2 (2015/10/18):\n      * fix issue with user config on windows platform.\n  \n  AutoPEP8 1.3.1 (2015/09/27):\n      + new option 'debug' was added\n  \n  AutoPEP8 1.3 (2015/05/08):\n      * autopep8 1.1 -> 1.1.1\n      * pep8 1.5.7 -> 1.6.2\n      * fixed issue with white spaces in autopep8 option values(#35)\n      * fixed grammar in error messages(#34)\n  \n  AutoPEP8 1.2 (2015/02/01):\n      * autopep8 1.0.4 -> 1.1\n      * changed sidebar and context menu layout\n      * fixed issue with formating in case all tabs are closed(#30)\n      * fixed issue with encoding(#31)\n      - Option \"file_menu_behaviour\" was removed\n  \n  AutoPEP8 1.1.3 (2014/10/12):\n      * autopep8 1.0.3 -> 1.0.4\n  \n  AutoPEP8 1.1.2 (2014/07/01):\n      * fixed issue(#28): ignore selected block during autosave process.\n      * autopep8 1.0.2 -> 1.0.3\n  \n  AutoPEP8 1.1.1 (2014/06/25):\n      * fixed issue(#27): plugin doesn't work properly in ST2.\n  \n  AutoPEP8 1.1 (2014/06/10):\n      - options \"max-threads\" and \"show_empty_panel\" were removed;\n      + added new option \"indent-size\" to specify number of spaces per indent level;\n      * option 'show_panel' was renamed to 'show_error_panel';\n      * autopep8 -> 1.0.2;\n      * pep8 -> 1.5.7;\n      * fixed issue with autosave mode;\n  \n  AutoPEP8 1.0.6 (2013/12/24):\n      + added option 'avoid_new_line_in_select_mode' to remove last empty line in select mode\n  \n  AutoPEP8 1.0.5 (2013/11/17):\n      * autopep8 -> 0.9.6\n      - \"verbose\" option was removed from the settings\n  \n  AutoPEP8 1.0.4 (2013/08/04):\n  + different behaviour for right click context menu (issue #22)\n      Option \"file_menu_behaviour\":\n          \"always\": menu appears always, even folder doesn't contain *.py files\n          \"never\":  menu never appears\n          \"ifneed\": default value, menu appears only if path or childs contain *.py file\n      Option \"file_menu_search_depth\" (default 3) define max search depth for \"ifneed\" mode\n  * pep8 -> 1.4.6\n  * autopep8 -> 0.9.2\n  \n  AutoPEP8 1.0.3 (2013/06/07):\n  * fix issue with Win7 in ST3\n  \n  AutoPEP8 1.0:\n  + support ST3\n  + support per-project settings (https://github.com/wistful/SublimeAutoPEP8/blob/master/Readme.md#per-project-settings)\n  + show unfixed errors in the output panel\n  + syntax can be provided by settings (`syntax_list` option)\n  + use threads to avoid freezing sublime\n  * fix issue with `format_on_save` option\n  + added `aggressive` option\n  * change default values of `verbose` and `ignore` options\n  \n  AutoPEP8 0.9.3:\n  + support ST3\n  * change list options in the config\n  \n  AutoPEP8 0.9.2:\n  + Initial support for ST3. (thanks dnatag)\n  * update pep8.py to version 1.4.6a0\n  * update autopep8.py to version 0.8.7\n  \n  AutoPEP8 0.9.1:\n  * fix conflicts with SublimeLinter plugin\n  \n  AutoPEP8 0.9:\n  * use autopep8.py module instead of spawn the process\n  + improve speed of formatting\n  \n  AutoPEP8 0.8:\n  * fixed issue with exception while removing open file\n  * update pep8.py to version 1.4.2a0\n  * update autopep8.py to version 0.8.6\n  \n  AutoPEP8 0.7:\n  + autoformat on save\n  + sidebar menu\n  + autoformat/preview selected text\n  - cursor and scroll position are lost after \"Format Code\"\n  - encoding issue\n\n\nLaTeXTools\n----------\n\n  LaTeXTools Plugin version 3.13.6 (2017-04-25) changelog:\n  \n  Bugfixes:\n  - Various minor bugfixes\n\n\nLaTeXTools\n----------\n\n  LaTeXTools Plugin version 3.14.0 (2017-05-10) changelog:\n  \n  Features:\n  - The scopes where a math preview is shown are now configurable (#944,#997)\n  - Added a command to open the Detexify web page\n  \n  \n  Bugfixes:\n  - Fixed a bug, which disabled certain features if you have \\verb|\\end{document}| in your document (#1075)\n  - Slightly improved the log parsing\n",
+			"settings":
+			{
+				"buffer_size": 14628,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=IFERROR(INT(MID(G2,FIND(\"-\",G2)+1,IFERROR(FIND(\"*\",G2)-1,LEN(G2))-FIND(\"-\",G2))),\"\")",
+			"settings":
+			{
+				"buffer_size": 85,
+				"line_ending": "Windows",
+				"name": "=IFERROR(INT(MID(F2,FIND(\"-\",F2)+1,IFERROR(FIND(\"*"
+			}
+		},
+		{
+			"contents": "from itertools import combinations\nfrom fractions import gcd\n\nlcm_dict = {(): 1}\n\n\ndef lcm(a, b):\n    return a * b // gcd(a, b)\n\n\ndef lcm_list(perm):\n    l = lcm(lcm_dict[perm[:-1]], perm[-1])\n    lcm_dict[perm] = l\n    return l\n\n\ndef remove_multiples(divisors):\n    # Directly from Joe Wallis's answer\n    new_divisors = []\n    divisors = sorted(set(divisors))\n    for divisor in divisors:\n        if not any(divisor % d == 0 for d in new_divisors):\n            new_divisors.append(divisor)\n    return new_divisors\n\n\ndef sum_divisible_by_k(k, start, stop):\n    sum_start = -(-start // k)\n    sum_stop = (stop - 1) // k\n    return int(0.5*k*(sum_stop+sum_start)*(sum_stop-sum_start+1))\n\n\ndef sum_divisible_fast(div=[3, 5], stop=100, start=1):\n    '''\n    Finds all numbers divisible by the numbers in div \n    from start to stop. This is done using the inclusion-exclusion principle\n    https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle\n    sum_divisible_fast([2, 3], 0, 10) = 32\n    Since 2 + 3 + 4 + 6 + 8 + 9 = 32.\n    '''\n    divisors = remove_multiples(div)\n    total = 0\n\n    j = 1\n    for i in xrange(1, len(divisors)+1):\n        for perm in combinations(divisors, i):\n            product = lcm_list(perm)\n            total += j*sum_divisible_by_k(product, start, stop)\n        j = -j\n\n    return total\n\n\ndef sum_divisible_naive(divisors=[3, 5], stop=100, start=1):\n    count = 0\n    for num in xrange(start, stop):\n        for d in divisors:\n            if num % d == 0:\n                count += num\n                break\n    return count\n\n\nif __name__ == \"__main__\":\n\n    print sum_divisible_fast([2, 3], 10)\n    print sum_divisible_naive([2, 3], 10)\n    print \n    print sum_divisible_naive([3, 15], 100000)\n    print sum_divisible_fast([3, 15], 100000)\n\n    import timeit\n\n    times = 10\n    t1 = timeit.timeit(\"sum_divisible_naive([2, 3, 5, 7, 11, 13, 17, 19, 23, 29], 10**6)\",\n                       setup=\"from __main__ import sum_divisible_naive\", number=times)/float(times)\n    print \"Naive: \", t1*1000, \"ms.\"\n    t2 = timeit.timeit(\"sum_divisible_fast([2, 3, 5, 7, 11, 13, 17, 19, 23, 29], 10**6)\",\n                       setup=\"from __main__ import sum_divisible_fast\", number=times)/float(times)\n    print \"Optimized: \", t2*1000, \"ms.\"\n    print \"The optimized code was {} times faster than the naive\".format(t1/float(t2))\n",
+			"file": "/C/Users/oistes/Dropbox/Python/Euler/problem_001.py",
+			"file_size": 2427,
+			"file_write_time": 131382376097278027,
+			"settings":
+			{
+				"buffer_size": 2360,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/oistes/Dropbox/Python/Diverse/eventyr_finn.py",
+			"settings":
+			{
+				"buffer_size": 2401,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/oistes/Dropbox/Python/Diverse/kylling.py",
+			"settings":
+			{
+				"buffer_size": 4846,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/oistes/Dropbox/Python/Diverse/shuffle_persons.py",
+			"settings":
+			{
+				"buffer_size": 332,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Welcome to the results of what /r/smashbros thinks are the 20 best Melee players of 2016!\n\n------\n\n**Yesterday:**\n\n* **Lucky** won the poll yesterday making him the **20th** best player of 2016!\n* *Chudat* [recieved 39 upvotes](https://www.reddit.com/r/smashbros/comments/5kzp3j/meleersmashbross_2016_20_best_day_20/dbrto5b/), and has **NOT** been added to the poll as this was the last day \nThanks to [/u/sererson](https://www.reddit.com/user/sererson) for the nomination.\n\n------\n\nBelow is a comparison with both the summer and last years ranking\n\n------\n\n2016 | Summer 2016 | 2015 | Player | Sponsor  | Character\n--------:|--------:|:--------:|:---------:\n[**1**](https://www.reddit.com/r/smashbros/comments/5hk6p6/rsmashbross_summer_2016_x_best_day_1/) | - | ↑1↑ |  Armada     |  [(SponsorAlliance)](#SponsorAlliance)    | [(Peach)](#MeleePeach) / [(Fox)](#MeleeFox)\n[**2**](http://demochoice.org/dcresults.php?poll=smashday02)    | ↓1↓ |  -  | Hungrybox  |  [(SponsorTL)](#SponsorTL)          | [(Puff)](/Puff)\n[**3**](http://demochoice.org/dcresultsum.php?poll=SmashDay03)  |  -  | ↑1↑ | Mango      |  [(SponsorC9)](#SponsorC9)          | [(Fox)](/Fox)  [(Falco)](/Falco) / [(Marth)](/Marth) \n[**4**](http://demochoice.org/dcresultsum.php?poll=SmashDay04)  | ↑1↑ | ↑1↑ | Mew2King   |  [(SponsorMVG)](#SponsorMVG) [(SponsorEchoFox)](#SponsorEchoFox)    | [(Sheik)](/Sheik) [(Marth)](/Marth)  / [(Fox)](/Fox) \n[**5**](http://demochoice.org/dcresultsum.php?poll=SmashDay05)  | ↓1↓ | ↓2↓ | Leffen     |  [(SponsorTSM)](#SponsorTSM) [(SponsorRedbull)](#SponsorRedbull) | [(Fox)](/Fox)   \n[**6**](http://demochoice.org/dcresultsum.php?poll=SmashDay06)  |  -  | ↑1↑ | Plup       |  [(SponsorPG)](#SponsorPG)          | [(Sheik)](/Sheik) [(Samus)](/Samus)  / [(Fox)](/Fox) \n[**7**](http://demochoice.org/dcresultsum.php?poll=SmashDay07)  | ↑2↑ | ↑6↑ | SFAT       |  [(SponsorCLG)](#SponsorCLG)                     | [(Fox)](/Fox)  / [(Marth)](/Marth) \n[**8**](http://demochoice.org/dcresultsum.php?poll=SmashDay08)  | ↓1↓ |  -  | Westballz  |  [(SponsorG2)](#SponsorG2)                      | [(Falco)](/Falco) / [(Fox)](/Fox)  [(CF)](/CF)\n[**9**](http://demochoice.org/dcresultsum.php?poll=SmashDay09)  | ↓1↓ |  -  | Axe        |  [(SponsorTempo)](#SponsorTempo)             | [(Pikachu)](/Pikachu) / [(Falco)](/Falco) [(YL)](/YL) \n[**10**](http://demochoice.org/dcresultsum.php?poll=SmashDay10) | ↑2↑ |  X  | Swedish Delight | RNG   | [(Sheik)](/Sheik) / [(Peach)](/Peach) [(Luigi)](/Luigi)\n[**11**](http://demochoice.org/dcresultsum.php?poll=SmashDay11) | ↓1↓ | ↓1↓ | Shroomed | Immortals | [(Sheik)](/Sheik) / [(Marth)](/Marth) \n[**12**](http://demochoice.org/dcresultsum.php?poll=SmashDay12) | ↑4↑ | ↑4↑ | Ice | LG | [(Fox)](/Fox) \n[**13**](http://demochoice.org/dcresultsum.php?poll=SmashDay13) | ↓2↓ |  X  | Wizzrobe |  [(SponsorCOG)](#SponsorCOG) | [(CF)](/CF)  \n[**14**](http://demochoice.org/dcresultsum.php?poll=SmashDay14) | ↑4↑ | ↓2↓ | PewPewU | [(SponsorCLG)](#SponsorCLG)  | [(Marth)](/Marth) /  [(Fox)](/Fox) \n[**15**](http://demochoice.org/dcresultsum.php?poll=SmashDay15) |  -  | ↑5↑ | Duck | Denial  | [(Samus)](/Samus)\n[**16**](http://demochoice.org/dcresultsum.php?poll=SmashDay16) | ↓2↓ | ↑2↑ | S2J |  [(SponsorTempo)](#SponsorTempo) | [(CF)](/CF)\n[**17**](http://demochoice.org/dcresultsum.php?poll=SmashDay17) | ↑5↑ | ↑4↑ | Nintendude | [(SponsorSpy)](#SponsorSpy) | [(Icies)](/Icies) / [(Peach)](/Peach)\n[**18**](http://demochoice.org/dcresultsum.php?poll=SmashDay18) | ↑2↑ |  X  | None | [(SponsorEMG))](#SponsorEMG) | [(CF)](/CF) / [(Ganon)](/Ganon)\n[**19**](http://demochoice.org/dcresultsum.php?poll=SmashDay19) | ↑5↑ | ↑11↑| The Moon |  | [(Marth)](/Marth) \n[**20**](http://demochoice.org/dcresultsum.php?poll=SmashDay20) | ↓7↓ | ↓9↓ | Lucky |  [](#SponsorSelfless) | [(Fox)](/Fox) \n------\n\n* [We are now using an instant runoff system](https://www.youtube.com/watch?v=3Y3jE3B8HsE). Please rank as many of the candidates as possible =)\n\n* PPMD and Hax are again excluded from being voted in due to inactivity. KREYGASM Genesis 4 bois!\n\n* Inspired by [newbzoors'](https://www.reddit.com/user/newbzoors) previous ranking of [/r/smashbros 30 Best in 30 Days](https://www.reddit.com/r/smashbros/comments/3zx7pc/rsmashbros_30_best_in_30_days_final_results/).",
+			"settings":
+			{
+				"buffer_size": 4281,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/oistes/Dropbox/Python/Diverse/nigga.py",
+			"settings":
+			{
+				"buffer_size": 445,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Welcome to an ongoing poll where we will try to see what /r/smashbros  thinks are the 30 best Melee players of 2016 so far! \n\n------\n\n**Yesterday:**\n\n* **Zhu** [won the poll with 37% of the votes (127 votes)](http://i.imgur.com/4qqqWHt.jpg), making him the **29th** best player of 2016 so far! \n* *Hugs,* [recieved 18 upvotes](https://www.reddit.com/r/smashbros/comments/4zf0ip/meleersmashbross_summer_2016_30_best_day_29/d6va3qy), and has been added to the poll. \nThanks to [/u/Qwexe](https://www.reddit.com/user/Qwexe) for the nomination.\n\n------\n\n**Reminder of the rules:**\n\n* Vote in the poll below for who you think is the best player in the group.\n\n* If you're interested in seeing as many people's opinions as possible, please **upvote** this thread for visibility.\n\n------\n\n**~~Vote here:~~** [~~Javi, Chillindude, Hugs, KJH, Laudandus, DizzKidBoogie~~](https://goo.gl/forms/wJC2UUfWEbZhdODi2).\n\n**Voting is now closed:** [Go to \"Results\" for the final list](https://www.reddit.com/r/smashbros/comments/4zpclf/rsmashbross_summer_2016_30_best_results/)\n\n------\n\nPosition | Player | Sponsor  | Character\n--------:|--------:|:--------:|:---------:\n[**1**](https://www.reddit.com/r/smashbros/comments/4uutuh/rsmashbross_summer_2016_30_best_day_1/) | Hungrybox  |  [](#SponsorTL)          | [(Puff)](/Puff) \n[**2**](https://www.reddit.com/r/smashbros/comments/4v0ztm/rsmashbross_summer_2016_30_best_day_2/) | Armada     |  [](#SponsorAlliance)    | [(Peach)](/Peach) / [(Fox)](/Fox) \n[**3**](https://www.reddit.com/r/smashbros/comments/4v6qh7/rsmashbross_summer_2016_30_best_day_3/) | Mango      |  [](#SponsorC9)          | [(Fox)](/Fox)  [(Falco)](/Falco) / [(Marth)](/Marth) \n[**4**](https://www.reddit.com/r/smashbros/comments/4vc6iq/rsmashbross_summer_2016_30_best_day_4/) | Leffen     |  [](#SponsorTSM) [](#SponsorRedbull) | [(Fox)](/Fox)   / [(Fox)](/Fox) \n[**5**](https://www.reddit.com/r/smashbros/comments/4vh6wg/rsmashbross_summer_2016_30_best_day_5/) | Mew2King   |  [](#SponsorMVG) [](#SponsorEchoFox)    | [(Sheik)](/Sheik) [(Marth)](/Marth)  / [(Fox)](/Fox)  [(Peach)](/Peach)\n[**6**](https://www.reddit.com/r/smashbros/comments/4vmnyi/rsmashbross_summer_2016_30_best_day_6/) | Plup       |  [](#SponsorPG)          | [(Sheik)](/Sheik) [(Samus)](/Samus)  / [(Fox)](/Fox) \n[**7**](https://www.reddit.com/r/smashbros/comments/4vrd6e/rsmashbross_summer_2016_30_best_day_7/) | Westballz  |  [](#SponsorG2)                      | [(Falco)](/Falco) / [(Fox)](/Fox)  [(CF)](/CF)\n[**8**](https://www.reddit.com/r/smashbros/comments/4vyo46/rsmashbross_summer_2016_30_best_day_8/) | Axe        |  [](#SponsorTempo)             | [(Pikachu)](/Pikachu) / [(Falco)](/Falco) [(YL)](/YL) \n[**9**](https://www.reddit.com/r/smashbros/comments/4w4pqq/rsmashbross_summer_2016_30_best_day_9/) | SFAT       |  [](#SponsorCLG)                     | [(Fox)](/Fox)  / [(Marth)](/Marth) \n[**10**](https://www.reddit.com/r/smashbros/comments/4walo1/rsmashbross_summer_2016_30_best_day_10/) | Shroomed |  [](#SponsorWinterFox)               | [(Sheik)](/Sheik) / [(Marth)](/Marth) \n[**11**](https://www.reddit.com/r/smashbros/comments/4wfzsq/rsmashbross_summer_2016_30_best_day_11/) | Wizzrobe |  [](#SponsorCOG)         | [(CF)](/CF)\n[**12**](https://www.reddit.com/r/smashbros/comments/4wkyfk/rsmashbross_summer_2016_30_best_day_12/) | Swedish Delight |   | [(Sheik)](/Sheik) / [(Peach)](/Peach) [(Luigi)](/Luigi)\n[**13**](https://www.reddit.com/r/smashbros/comments/4wqa0b/rsmashbross_summer_2016_30_best_day_13/) | Lucky |  [](#SponsorSelfless) | [(Fox)](/Fox) \n[**14**](https://www.reddit.com/r/smashbros/comments/4wwacw/rsmashbross_summer_2016_30_best_day_14/) | S2J |  [](#SponsorTempo) | [(CF)](/CF)\n[**15**](https://www.reddit.com/r/smashbros/comments/4x2qwp/rsmashbross_summer_2016_30_best_day_15/) | Duck | Denial  | [(Samus)](/Samus)\n[**16**](https://www.reddit.com/r/smashbros/comments/4x8yp6/rsmashbross_summer_2016_30_best_day_16/) | Ice | [](#SponsorMyInsanity) | [(Fox)](/Fox) \n[**17**](https://www.reddit.com/r/smashbros/comments/4xdnnw/rsmashbross_summer_2016_30_best_day_17/) | Colbol | [](#SponsorSmashStudios) | [(Fox)](/Fox)  [(Marth)](/Marth) \n[**18**](https://www.reddit.com/r/smashbros/comments/4xj5ma/rsmashbross_summer_2016_30_best_day_18/) | PewPewU | [](#SponsorCLG)  | [(Marth)](/Marth) /  [(Fox)](/Fox) \n[**19**](https://www.reddit.com/r/smashbros/comments/4xo82f/rsmashbross_summer_2016_30_best_day_19/) | Wobbles | [](#SponsorPG) | [(Icies)](/Icies)\n[**20**](https://www.reddit.com/r/smashbros/comments/4xtrw6/rsmashbross_summer_2016_30_best_day_20/) | None | [](#SponsorEMG) | [(CF)](/CF) / [(Ganon)](/Ganon)\n[**21**](https://www.reddit.com/r/smashbros/comments/4xzugy/meleersmashbross_summer_2016_30_best_day_21/) | DruggedFox | | [(Fox)](/Fox) \n[**22**](https://www.reddit.com/r/smashbros/comments/4y5uvw/meleersmashbross_summer_2016_30_best_day_22/) | Nintendude | [](#SponsorSpy) | [(Icies)](/Icies) / [(Peach)](/Peach)\n[**23**](https://www.reddit.com/r/smashbros/comments/4ychfm/rsmashbross_summer_2016_30_best_day_23/) | Silent Wolf | [](#SponsorSecret) | [(Fox)](/Fox) \n[**24**](https://www.reddit.com/r/smashbros/comments/4yj3yx/rsmashbross_summer_2016_30_best_day_24/) | The Moon |  | [(Marth)](/Marth) \n[**25**](https://www.reddit.com/r/smashbros/comments/4yoz2z/rsmashbross_summer_2016_30_best_day_25/) | ChuDat |  [](#SponsorVGBC)  | [(Icies)](/Icies)\n[**26**](https://www.reddit.com/r/smashbros/comments/4yv1o8/rsmashbross_summer_2016_30_best_day_26/) | MacD |  SplycePro  | [(Peach)](/Peach)\n[**27**](https://www.reddit.com/r/smashbros/comments/4z0xkr/rsmashbross_summer_2016_30_best_day_27/) | Professor Pro |  [](#SponsorVWS) | [(Fox)](/Fox) \n[**28**](https://www.reddit.com/r/smashbros/comments/4z94nj/rsmashbross_summer_2016_30_best_day_28/) | aMSa |   [](#SponsorVGBC)  | [(Yoshi)](/Yoshi)\n[**29**](https://www.reddit.com/r/smashbros/comments/4zf0ip/meleersmashbross_summer_2016_30_best_day_29/) | Zhu |     | [(Falco)](/Falco)\n\n------\n\n¹ PPMD can not be nominated due to inactivity. Same with Hax =(\n\nInspired by [newbzoors'](https://www.reddit.com/user/newbzoors) previous ranking of [/r/smashbros 30 Best in 30 Days](https://www.reddit.com/r/smashbros/comments/3zr88g/rsmashbros_30_best_in_30_days_day_30/).",
+			"settings":
+			{
+				"buffer_size": 6256,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/oistes/Dropbox/Python/Diverse/SMASH.py",
+			"settings":
+			{
+				"buffer_size": 5858,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Primary Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Choose Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				"Primary Quick Build"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"matla",
+				"Set Syntax: MATLAB"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"['latexmk -cd -e -f -pdf -interaction=nonstopmode -synctex=1 -latexoption=\"--shell-escape\" 'Project-Euler.tex']",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/oistes/Dropbox/Python/Diverse/alice-and-bob",
+		"/C/Users/oistes/Dropbox/Python/Diverse/reddit-soup.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/tallteori.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/faktorisering.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/tjernad.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_098.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/SMASH.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_013",
+		"/C/Users/oistes/Dropbox/AutoHotkey/newscript",
+		"/C/Users/oistes/Dropbox/Python/Euler/nearly_square_divisors.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_003.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_010.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/fouriest.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/shuffle_persons.py",
+		"/C/Program Files/Sublime Text 3/populasjonsdynamikk",
+		"/C/Program Files/Sublime Text 3/words_to_letters",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_004.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_081.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/Monopoly.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/Codereview - Rainfall.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/string_construct.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/rainfall_q.py",
+		"/C/Users/oistes/AppData/Roaming/Microsoft/Windows/Recent/rainfall-example-1.txt.lnk",
+		"/C/Users/oistes/Dropbox/Python/Diverse/Monopoly_properties.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/Baillie–PSW-primality-test.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/faktorisering.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/test_luckas.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/code_review_lucas_QR.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/lucad_sequence.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_001.py",
+		"/C/Users/oistes/Documents/BH5",
+		"/C/Users/oistes/Dropbox/Python/Diverse/prisoners.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/fib_test.py",
+		"/C/Users/oistes/Documents/FrequentPostedImprovements.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/diverse",
+		"/C/Users/oistes/Dropbox/Python/Diverse/Project_Euler_004_test.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/hangman_answer.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_030.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_002.py",
+		"/C/Users/oistes/Documents/mpz_lucas.c",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_007.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/prime_factors.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/test_nth_prime.py",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/LaTeXing/LaTeXing.sublime-settings",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_021.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_005.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/test_string.py",
+		"/C/Users/oistes/Dropbox/LaTeX/Project Euler 100/1-100/Project-Euler-006.tex",
+		"/C/Users/oistes/Dropbox/Python/Diverse/palindrome_primes.py",
+		"/C/Users/oistes/Dropbox/LaTeX/Project Euler 100/Project-Euler.tex",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/C/Users/oistes/Dropbox/LaTeX/testing/BergManden.tex",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/README.markdown",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_016.py",
+		"/C/Users/oistes/AppData/Roaming/Microsoft/Windows/Recent/palindrome_primes.py.lnk",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/oistes/Dropbox/Python/Diverse/test_stewie.py",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/oistes/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_070.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_124.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/palindrome_prime_sieve",
+		"/C/Users/oistes/Dropbox/Python/Diverse/test_relative_prime.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/palindrome.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_056.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_009.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_105.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_107.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/FizzBuzz",
+		"/C/Users/oistes/Dropbox/Python/Diverse/phi_in_range.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_072.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_073.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/prime_number_checker.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/iso_1234",
+		"/C/Users/oistes/Dropbox/Python/Diverse/problem_006.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_051.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_089.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_102.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_145.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_046.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/phranscis.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/clock.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/400-499/problem_491.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/baad.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/300-399/problem_345.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_014.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_035.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_025.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/dm.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/firstprimes.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_082.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_083.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_097.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_018.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_188.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_094.py",
+		"/C/Users/oistes/AppData/Roaming/Microsoft/Windows/Recent/dok.py.lnk",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_068.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_061.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/super_stest.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_091.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_075.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/next_perfect_square.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/test_binom_factor",
+		"/C/Users/oistes/Dropbox/Python/Euler/200-299/problem_206.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_029.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_024.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_020.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_012",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_119.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_066.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_023.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/euler23.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/problem_009",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_138.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_134.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_132.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_133.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_130.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_129.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_129'.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/strip_string.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_197.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_181.py",
+		"/C/Users/oistes/Dropbox/Python/Euler/100-199/problem_171.py",
+		"/C/Users/oistes/Dropbox/Python/Diverse/stars.py"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"F2",
+			"C2",
+			"I15",
+			"\\dz",
+			"\\dx",
+			"\\C",
+			"%",
+			"x",
+			"_i",
+			"\\dmu",
+			"\\,d\\theta",
+			"\\varphi",
+			"\\prod_{k=1}^{\\infty}",
+			"\\sum_{k=1}^{\\infty}",
+			"\\sum_{n = 1}^\\infty",
+			"\\sum_{n=1}^\\infty",
+			"\\sum_{n=1}^{\\infty}",
+			" ''",
+			"'' ",
+			"</math>",
+			":<math>",
+			"[](/Samus)",
+			"[](/CF)",
+			"[](/Ganon)",
+			"[(CF)](/CF)",
+			"[](/Puff)",
+			"[](/Marth)",
+			"[](/Marth) ",
+			"[](/Peach)",
+			"[](/Icies)",
+			"[](/CF) ",
+			"[(Marth)](/Marth) ",
+			"[](/Sheik) ",
+			"[](/Falco) ",
+			"[](/Fox)",
+			"[](/Fox) ",
+			"In",
+			"$",
+			"equation",
+			"\\end{minipage}",
+			"\\begin{minipage}",
+			"multiline",
+			"multline",
+			"y",
+			"x",
+			"a_{21}",
+			"a_{12}",
+			"])",
+			"add([",
+			"add(",
+			"append",
+			"')",
+			"('",
+			"'1",
+			"1'",
+			"0'",
+			"print '",
+			"' + '",
+			"', '",
+			"y",
+			"x",
+			"create_sub",
+			"sub",
+			":\n",
+			"'fillets'",
+			"'weight'",
+			"dinner_four",
+			"dinner_two",
+			"dinner_three",
+			"dinner_one",
+			"fillet_len",
+			"fillets",
+			"CHICKEN_WEIGHT_TOTAL",
+			"pose",
+			"len(fillet_len)",
+			"fillet_len",
+			"\\mathrm{d}y",
+			"\\mathrm{d}x",
+			"\\mathrm{d}v",
+			"\\mathrm{d}u",
+			"#SponsorTempoStorm",
+			"SMALL_PRIME",
+			"LARGE_PRIME",
+			"_BIG_PRIME_LIST",
+			"_primelist",
+			"_primeset",
+			"small_prime_list",
+			"large_prime_list",
+			"bernt_largest_primefactor",
+			"ALPHABETH_len",
+			"ALPHABETH",
+			"unravel",
+			"matrix",
+			"matrix_2_string",
+			"lowest_sink_neighboor_height",
+			"lowest_sink_neighboor_coords",
+			"print",
+			"matrix",
+			"lowest_sink_neighboor_value",
+			"dimensions",
+			"_list",
+			"y",
+			"x",
+			"\n\n\n",
+			"\n",
+			" ",
+			"   ",
+			" ",
+			"    ",
+			".  ",
+			"  ",
+			"CaptainFalconHeadSSBM.png",
+			"FalcoHeadSSBM.png",
+			"YoshiHeadSSBM.png ",
+			"IceCli",
+			"SheikHeadSSBM.png",
+			"IceClimbersHeadSSBM.png",
+			"FoxHeadSSBM.png",
+			"png",
+			"MarthHeadSSBM",
+			"png",
+			"FalcoHeadSSBM.png",
+			"Japan",
+			"UK ",
+			"Mexico",
+			"Netherlands ",
+			"Spain",
+			"Sweden"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"G2",
+			"E2",
+			"C2",
+			"\\mathrm{d}z",
+			"\\mathrm{d}x",
+			"\\mathbb{C}",
+			"",
+			"\\theta",
+			"_j",
+			"\\dm",
+			"\\dT",
+			"\\theta",
+			"\\prod_{k\\geq 1}",
+			"\\sum_{k\\geq 1}",
+			"\\sum_{n\\geq 1}",
+			" $",
+			"$",
+			"\\end{align*}",
+			"\\begin{align*}",
+			"[(Samus)](/Samus)",
+			"[(CF)](/CF)",
+			"[(Ganon)](/Ganon)",
+			"[(CF)](/CF)",
+			"[(Puff)](/Puff) ",
+			"[(Marth)](/Marth) ",
+			"[(Peach)](/Peach)",
+			"[(Icies)](/Icies)",
+			"[(CF)](/CF) ",
+			"[](/Marth) ",
+			"[(Sheik)](/Sheik) ",
+			"[(Falco)](/Falco) ",
+			"[(Fox)](/Fox) ",
+			"    *",
+			" \\\\\\",
+			"\\\\",
+			"align",
+			"\\end{subfigure}",
+			"\\begin{subfigure}",
+			"split",
+			"x[0]",
+			"t",
+			"b",
+			"a",
+			")",
+			"add(",
+			"add([",
+			"add",
+			"'])",
+			"(['",
+			"1'",
+			"'1)",
+			"')",
+			"combinations.append('",
+			"combinations.append(",
+			" and ",
+			"x[0]",
+			"t",
+			"x[0]",
+			"\\dy",
+			"\\dx",
+			"\\dv",
+			"\\du",
+			"#SponsorTempo",
+			".    ",
+			",       ",
+			",    ",
+			"p",
+			"num",
+			"factor",
+			"collatz_len",
+			"sum_factors",
+			" + ",
+			"digits",
+			"isprime",
+			"DICE_SIZE",
+			"next_gallow",
+			"_GALLOW_MODIFIER",
+			"gallow",
+			"",
+			"M",
+			"Q",
+			"U",
+			"M",
+			"bezier",
+			"ujson",
+			"json",
+			"))",
+			"prme_tple((",
+			"hits",
+			"fleet",
+			"",
+			"ship",
+			"price",
+			"unit",
+			"units",
+			"# print",
+			"name",
+			"(\"",
+			"\")",
+			"print(",
+			"$",
+			"",
+			"\\citet*",
+			"avg_or_std",
+			"n",
+			"lst",
+			"speler ludøl",
+			"num",
+			"num_list",
+			"\"",
+			"prod",
+			"lst",
+			"node"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1338,
+								1338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 240.0,
+						"translation.y": 1053.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/oistes/Documents/Python Scripts/fruit",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								942
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								85
+							]
+						],
+						"settings":
+						{
+							"auto_name": "=IFERROR(INT(MID(F2,FIND(\"-\",F2)+1,IFERROR(FIND(\"*",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/oistes/Dropbox/Python/Euler/problem_001.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2272,
+								2272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/oistes/Dropbox/Python/Diverse/eventyr_finn.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/oistes/Dropbox/Python/Diverse/kylling.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4828,
+								4828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2621.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/oistes/Dropbox/Python/Diverse/shuffle_persons.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								888,
+								888
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/oistes/Dropbox/Python/Diverse/nigga.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								445
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3557,
+								3408
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Users/oistes/Dropbox/Python/Diverse/SMASH.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								667,
+								667
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.autopep8":
+	{
+		"height": 142.0
+	},
+	"output.exec":
+	{
+		"height": 132.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "ProjectEuler.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\oistes\\Dropbox\\Python\\Euler\\problem_030.py"
+			],
+			[
+				"prob",
+				"C:\\Users\\oistes\\Dropbox\\Python\\Euler\\problem_001.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
