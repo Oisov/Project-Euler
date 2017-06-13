@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''
+Problem 3: Largest prime factor
+
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+'''
+
 from faktorisering import primesbelow, isprime
 from primefac import primefac
 from primesieve import Iterator, generate_primes, generate_n_primes
@@ -5,12 +16,13 @@ from fractions import gcd
 from random import randint
 from math import sqrt
 
+
 def brent(N):
     if N%2==0:
         return 2
     y, c, m = randint(1, N-1), randint(1, N-1), randint(1, N-1)
     g, r, q = 1, 1, 1
-    while g == 1:             
+    while g == 1:
         x = y
         for i in range(r):
             y = ((y*y)%N+c)%N
@@ -29,7 +41,8 @@ def brent(N):
             g = gcd(abs(x-ys),N)
             if g > 1:
                 break
-    return g 
+    return g
+
 
 def bernt_largest_primefactor(N):
     while not isprime(N) and N > 1:
@@ -125,7 +138,7 @@ def largest_factor(num, number_of_spokes = 3):
             num //= factor
             while num % factor == 0:
                 num //= factor
-            if num == 1: 
+            if num == 1:
                 return factor
 
     multiple = 0
@@ -149,7 +162,7 @@ def prime_gen(num):
     prime = it.next_prime()
     limit = num**0.5
     while prime < limit:
-        if num % prime == 0: 
+        if num % prime == 0:
             num //= prime
             while num % prime == 0: num //= prime
             if num == 1: return prime
@@ -212,7 +225,7 @@ if __name__ == "__main__":
     # t1 = timeit.timeit(
     #    "list(primefac(600851475143543))[-1]", number=times, setup="from __main__ import primefac")
     # print 1000*t1/float(times), 'ms', 'primefac'
-    
+
     # t2 = timeit.timeit(
     #    "largest_factor_2(600851475143543)", number=times, setup="from __main__ import largest_factor_2")
     # print 1000*t2/float(times), 'ms'

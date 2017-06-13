@@ -1,20 +1,18 @@
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''
+Project Euler 4: Largest palindrome product
+
+A palindromic number reads the same both ways.
+The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 x 99.
+
+Find the largest palindrome made from the product of two 3-digit numbers.
+'''
+
 import timeit
 from primefac import isprime
-
-'''
-===============================================
-
-Largest palindrome product
-Problem 4
-
-A palindromic number reads the same both ways. 
-The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 x 99. 
-
-Find the largest palindrome made from the product of two 3-digit numbers. 
-
-===============================================
-'''
-
 
 def is_palindrome(number):
     string = str(number)
@@ -30,7 +28,7 @@ def palindrome_product_0(length):
     for i in range(lower, higher):
         for j in range(lower, higher):
             if is_palindrome(str(i*j)):
-                palindrome = i*j 
+                palindrome = i*j
                 if palindrome > palindrome_max:
                     palindrome_max = palindrome
     return palindrome_max
@@ -45,7 +43,7 @@ def palindrome_product_1(length):
     for i in range(higher, lower, -1):
         for j in range(i, lower, -1):
             if is_palindrome(str(i*j)):
-                palindrome = i*j 
+                palindrome = i*j
                 if palindrome > palindrome_max:
                     palindrome_max = palindrome
     return palindrome_max
@@ -62,7 +60,7 @@ def palindrome_product_2(length):
             break
         for j in range(i, lower, -1):
             if is_palindrome(str(i*j)):
-                palindrome = i*j 
+                palindrome = i*j
                 if palindrome > palindrome_max:
                     palindrome_max = palindrome
                     break
@@ -72,7 +70,7 @@ def palindrome_product_2(length):
 " Solution 3"
 
 def palindrome_product_3(n):
-    if n == 1: 
+    if n == 1:
         return ((3, 3), 9)
 
     palindrome = 0
@@ -121,7 +119,7 @@ def generate_palindromes(n, increase=False):
 
 
 def palindrome_product_4(n):
-    if n == 1: 
+    if n == 1:
         return ((3, 3), 9)
 
     en = 10 ** n
@@ -147,7 +145,7 @@ if __name__ == '__main__':
     # print palindrome_product_3(length)
     for i in range(3, 8):
         print i, palindrome_product_4(i)
-    
+
     times = 10
 
     # t1 = timeit.timeit("palindrome_product_0(3)",

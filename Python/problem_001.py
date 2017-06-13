@@ -1,3 +1,18 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''
+Problem 1: Multiples of 3 and 5
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
+
+    3, 5, 6 and 9.
+
+The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+'''
+
 from itertools import combinations
 from fractions import gcd
 
@@ -32,7 +47,7 @@ def sum_divisible_by_k(k, start, stop):
 
 def sum_divisible_fast(div=[3, 5], stop=100, start=1):
     '''
-    Finds all numbers divisible by the numbers in div 
+    Finds all numbers divisible by the numbers in div
     from start to stop. This is done using the inclusion-exclusion principle
     https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle
     sum_divisible_fast([2, 3], 0, 10) = 32
@@ -65,7 +80,7 @@ if __name__ == "__main__":
 
     print sum_divisible_fast([2, 3], 10)
     print sum_divisible_naive([2, 3], 10)
-    print 
+    print
     print sum_divisible_naive([3, 15], 100000)
     print sum_divisible_fast([3, 15], 100000)
 

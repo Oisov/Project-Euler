@@ -1,8 +1,18 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''
+Project Euler: Power digit sum
+
+2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+
+What is the sum of the digits of the number 2^1000?
+'''
 
 def below_twenty(n):
 	numbers = [ '', 'one', 'two', 'three', 'four', 'five',
-				'six', 'seven', 'eight', 'nine', 'ten', 
-				'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 
+				'six', 'seven', 'eight', 'nine', 'ten',
+				'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
 				'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'
 			]
 	return numbers[n]
@@ -10,7 +20,7 @@ def below_twenty(n):
 
 def ten_place_name(n):
 	numbers = [ '', '', 'twenty', 'thirty', 'forty', 'fifty',
-				'sixty', 'seventy', 'eighty', 'ninety' 
+				'sixty', 'seventy', 'eighty', 'ninety'
 			]
 	return numbers[n]
 
@@ -27,7 +37,7 @@ def concentrate_num(num):
 		temp_len = len(temp_num_lst)
 	# If there are any elements left add them (eg 12)
 	if temp_len>0:
-		num_lst.append(sum(10**(temp_len-i-1)*item for i,item in enumerate(temp_num_lst)))					
+		num_lst.append(sum(10**(temp_len-i-1)*item for i,item in enumerate(temp_num_lst)))
 	return num_lst[::-1]
 
 
@@ -42,7 +52,7 @@ def suffix(place):
 		sffx = 'billion'
 	elif place == 5:
 		sffx = 'trillion'
-	elif place == 6: 
+	elif place == 6:
 		sffx = 'quadrillion'
 	elif place == 7:
 		sffx = 'quintillion'
@@ -71,7 +81,7 @@ def below_hundred(num):
 			if 10*num_a + num_b < 20:
 				word += below_twenty(10*num_a + num_b)
 			else:
-				word += ten_place_name(num_a) 
+				word += ten_place_name(num_a)
 				if num_b > 0:
 					word += "-" + below_twenty(num_b)
 	elif num_lst_len == 3:
@@ -83,10 +93,10 @@ def below_hundred(num):
 			if 10*num_a + num_b < 20:
 				word += below_twenty(10*num_a + num_b)
 			else:
-				word += ten_place_name(num_a) 
+				word += ten_place_name(num_a)
 				if num_b > 0:
 					word += "-" + below_twenty(num_b)
-	return word 
+	return word
 
 def print_word(num):
 	word = ''
@@ -102,7 +112,7 @@ def print_word(num):
 			word += below_hundred(item) + " "
 			if index < num_lst_len-1:
 				word += suffix(power) + " "
-	
+
 	if str(word[0:3]) == "and":
 		return word[4:]
 	return word
