@@ -8,11 +8,11 @@ You are given the following information, but you may prefer to do some research
 for yourself.
 
 * Jan 1900 was a Monday.
-* Thirty days has September,
-  April, June and November⋅⋅
-  All the rest have thirty-one,⋅⋅
-  Saving February alone,⋅⋅
-  Which has twenty-eight, rain or shine.⋅⋅
+* Thirty days has September,<br>
+  April, June and November
+  All the rest have thirty-one,
+  Saving February alone,
+  Which has twenty-eight, rain or shine.
   And on leap years, twenty-nine.
 * leap year occurs on any year evenly divisible by 4, but not on a century
   less it is divisible by 400.
