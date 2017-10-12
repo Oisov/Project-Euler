@@ -12,23 +12,16 @@ terms would be:
     1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
 </p>
 
-<b></b>
-
-<b>34</b>
-
 Let us list the factors of the first seven triangle numbers:
 
-<!-- ``` -->
-<pre><code>
-     <b>1</b>: 1
+<pre><code>    <b>1</b>: 1
      <b>3</b>: 1,3
      <b>6</b>: 1,2,3,6
     <b>10</b>: 1,2,5,10
     <b>15</b>: 1,3,5,15
     <b>21</b>: 1,3,7,21
     <b>28</b>: 1,2,4,7,14,28
-</code></pre>:
-<!-- ``` -->
+</code></pre>
 
 We can see that 28 is the first triangle number to have over five divisors.
 
