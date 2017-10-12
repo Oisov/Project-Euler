@@ -14,7 +14,7 @@ terms would be:
 
 Let us list the factors of the first seven triangle numbers:
 
-<pre><code>    <b>1</b>: 1
+<pre><code>     <b>1</b>: 1
      <b>3</b>: 1,3
      <b>6</b>: 1,2,3,6
     <b>10</b>: 1,2,5,10
