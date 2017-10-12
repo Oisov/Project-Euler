@@ -1,4 +1,4 @@
-[Projeect Euler - Problem 18](https://projeecteuler.net/problem=18)
+[Project Euler - Problem 18](https://projecteuler.net/problem=18)
 ======
 
 Maximum path sum I
@@ -13,8 +13,6 @@ the row below, the maximum total from top to bottom is 23.
 2 <a href="https://projecteuler.net/problem=18">4</a> 6<br>
 8 5 <a href="https://projecteuler.net/problem=18">9</a> 3<br>
 </p>
-
-<br>
 
 That is, 3 + 7 + 4 + 9 = 23.
 
