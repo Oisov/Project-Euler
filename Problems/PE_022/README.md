@@ -4,7 +4,7 @@
 Names scores
 -----
  
- Using [names.txt](./p022_names) (right click and 'Save Link/Target As...'), a 46K text file
+ Using [names.txt](./p022_names.txt) (right click and 'Save Link/Target As...'), a 46K text file
  containing over five-thousand first names, begin by sorting it into alphabetical
  order. Then working out the alphabetical value for each name, multiply this
  value by its alphabetical position in the list to obtain a name score.
