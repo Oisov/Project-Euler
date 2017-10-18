@@ -10,5 +10,3 @@ function PE_013(path="../PE_013_input.txt")
     end
     first_n_digits(total)
 end
-
-println(PE_013())
