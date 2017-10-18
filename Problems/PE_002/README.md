@@ -15,3 +15,17 @@ terms. By starting with 1 and 2, the first 10 terms will be:
 four million, find the sum of the even-valued terms.*
 
 -----
+
+<p align="center">
+    4613732
+</p>
+
+-----
+
+### Python
+
+<p align="center">
+    <img src=PE_002_Benchmark_01_Python.png/>
+</p>
+
+-----
