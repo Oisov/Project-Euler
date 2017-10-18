@@ -17,15 +17,15 @@ four million, find the sum of the even-valued terms.*
 -----
 
 <p align="center">
-    **4613732**
+    <b>4613732</b>
 </p>
 
 -----
 
-## Python
+### Python
 
 <p align="center">
-    8.68610143661e-07 s
+    <b>8.68520021439e-07</b> s
 </p>
 
 <p align="center">
