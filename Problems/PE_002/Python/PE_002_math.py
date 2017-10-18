@@ -30,4 +30,5 @@ def PE_002_math(limit=4 * 10**6):
 
 
 if __name__ == "__main__":
+
     print(PE_002_math(10**(16)))
