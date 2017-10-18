@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 '''
 Problem 1: Multiples of 3 and 5
 
@@ -15,7 +14,6 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 from itertools import combinations
 from fractions import gcd
-import sys, ast
 
 lcm_dict = {(): 1}
 
@@ -43,7 +41,7 @@ def remove_multiples(divisors):
 def sum_divisible_by_k(k, start, stop):
     sum_start = -(-start // k)
     sum_stop = (stop - 1) // k
-    return int(0.5*k*(sum_stop+sum_start)*(sum_stop-sum_start+1))
+    return int(0.5 * k * (sum_stop + sum_start) * (sum_stop - sum_start + 1))
 
 
 def PE_001(div=[3, 5], stop=10**3, start=1):
@@ -61,30 +59,15 @@ def PE_001(div=[3, 5], stop=10**3, start=1):
         return total
 
     j = 1
-    for i in xrange(1, len(divisors)+1):
+    for i in xrange(1, len(divisors) + 1):
         for perm in combinations(divisors, i):
             product = lcm_list(perm)
-            total += j*sum_divisible_by_k(product, start, stop)
+            total += j * sum_divisible_by_k(product, start, stop)
         j = -j
 
     return total
 
 
-def PE_naive(divisors=[3, 5], stop=100, start=1):
-    count = 0
-    for num in xrange(start, stop):
-        for d in divisors:
-            if num % d == 0:
-                count += num
-                break
-    return count
-
-
 if __name__ == "__main__":
 
-    if len(sys.argv) == 4:
-        PE_001(ast.literal_eval(sys.argv[1]),
-                   int(sys.argv[2]),
-                   int(sys.argv[3]))
-    else:
-        PE_001()
+    print(PE_001())
