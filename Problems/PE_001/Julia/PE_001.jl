@@ -5,16 +5,13 @@ function remove_non_coprime(divisors)
     new_divisors = []
     divisors = sort(unique(divisors))
     for divisor in divisors
-        index = 1
-        is_divisible = false
-        len_divisors = length(new_divisors)
 
-        while index < len_divisors
-            if mod(divisor, divisors[index]) == 0
+        is_divisible = false
+        for temp_new_div in new_divisors
+            if divisor % temp_new_div == 0
                 is_divisible = true
                 break
             end
-            index += 1
         end
 
         if !is_divisible
