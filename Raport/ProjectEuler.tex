@@ -1,0 +1,182 @@
+\documentclass[10pt]{article} % 5p gir 2 kolonner pr side. 1p gir 1 kolonne pr side.
+
+
+% Defines fonts and language settnings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} % Tilpasning til norsk.
+
+% Defines prettier tables and quotes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+% Mathematics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{mathtools, amsfonts, amssymb} %amsmath is loaded by mathtools
+
+\usepackage{amsthm} %Theorems
+    \newtheorem{lemma}{Lemma}
+    \newtheorem{proposition}{Proposition}
+    \newtheorem{definition}{Definition}
+
+    
+
+\usepackage{subcaption} \usepackage{caption}
+
+% Properly defines units and spacing in numbers, use \num and \IS{size}{unit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{siunitx} 
+    \sisetup{exponent-product = \cdot}      % Dot as multiplication symbol 
+    \sisetup{output-decimal-marker  =  {,}} % Comma as decimal marker
+    \sisetup{separate-uncertainty = true}   % Pluss-minus symbol for uncertanty.
+    \sisetup{table-number-alignment = right ,
+             table-format=2.3,
+             per-mode=symbol}
+    \sisetup{math-micro=\text{µ},text-micro=µ}
+\usepackage{textcomp}
+
+
+% Defines the ProjectEuler environment and required packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[dvpipsnames*,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage[framemethod=TikZ]{mdframed}
+
+\newenvironment{ProjectEuler}[2][]{%
+
+\setcounter{section}{#2}
+
+\addcontentsline{toc}{section}{Project Euler~#2:~#1}
+\ifstrempty{#1}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline = (current bounding box.east), outer sep = 0pt]
+\node[anchor = east, rectangle, fill = blue!20]
+{\strut Project Euler~#2};}}
+}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline = (current bounding box.east),outer sep = 0pt]
+\node[anchor = east, rectangle, fill = blue!20]
+{\strut \hypersetup{urlcolor = {}}\href{https://projecteuler.net/problem=#2}{Project Euler~#2:~#1}\hypersetup{urlcolor = cyan}};}}%
+}%
+\mdfsetup{innertopmargin=10pt, linecolor=blue!20,%
+linewidth = 2pt, topline = true,%
+frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+}
+\begin{mdframed}[]\relax%
+\label{PE-#2}}{\end{mdframed}}
+
+
+% Centeres figures automagically
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
+
+
+% Defines the style for the codeblocks
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\usepackage{geometry}
+\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in }
+
+\lstset{ frame=top,frame=bottom,
+  stepnumber=1, % the step between two line-numbers. If it is 1 each line will be numbered
+  numbersep=10pt, % how far the line-numbers are from the code
+  tabsize=2, % tab size in blank spaces
+  extendedchars=true, %
+  breaklines=true, % sets automatic line breaking
+  captionpos=t, % sets the caption-position to top
+  mathescape=true, showspaces=false, % Leerzeichen anzeigen ?
+  showtabs=false, % Tabs anzeigen ?
+  xleftmargin=17pt, framexleftmargin=17pt, framexrightmargin=17pt,
+  framexbottommargin=5pt,
+  framextopmargin=5pt,
+  showstringspaces=false % Leerzeichen in Strings anzeigen ?
+} \lstMakeShortInline[columns=fixed]|
+
+\DeclareCaptionFormat{listing}{\rule{\dimexpr\textwidth+17pt\relax}{0.4pt}\par\vskip1pt#1#2#3}
+\captionsetup[lstlisting]{format=listing,singlelinecheck=false, margin=0pt,
+  font={sf},labelsep=space,labelfont=bf}
+
+\renewcommand\lstlistingname{Algorithm}
+
+%%
+%% Julia definition (c) 2014 Jubobs
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstdefinelanguage{Julia}%
+  {morekeywords={abstract,break,case,catch,const,continue,do,else,elseif,%
+      end,export,false,for,function,immutable,import,importall,if,in,%
+      macro,module,otherwise,quote,return,switch,true,try,type,typealias,%
+      using,while},%
+   sensitive=true,%
+   alsoother={$},%
+   morecomment=[l]\#,%
+   morecomment=[n]{\#=}{=\#},%
+   morestring=[s]{"}{"},%
+   morestring=[m]{'}{'},%
+}[keywords,comments,strings]%
+
+\lstset{%
+    language         = Julia,
+    keywordstyle     = \bfseries,
+    stringstyle      = \color{magenta},
+    commentstyle     = \color{ForestGreen},
+    showstringspaces = false,
+}
+% Hyper references
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+            pdfmenubar=false,
+            pdfstartview={FitH},
+            linktoc = all,
+            urlcolor = purple,
+            citecolor = black,
+            linkcolor = {}}
+
+\usepackage[nameinlink]{cleveref}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bibliography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[numbers]{natbib}
+\usepackage{chapterbib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{multicol}
+
+%Defines the linkcolor 
+\newcommand{\link}{NavyBlue}
+
+\usepackage[nameinlink]{cleveref}
+
+\creflabelformat{equation}{#2(\textcolor{\link}{#1})#3}
+\creflabelformat{table}{#2\textcolor{\link}{#1}#3}
+\creflabelformat{figure}{\!#2\textcolor{\link}{#1}#3}
+
+\title{Project Euler \\ - Prematurely optimized and Overengineered }
+\author{Øistein Søvik}
+
+\begin{document}
+
+\lstinputlisting[language=Julia, 
+                 caption=Recursive route-counting function,
+            ]{countRoutes.jl}
+
+\end{document}

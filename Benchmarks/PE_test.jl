@@ -1,4 +1,4 @@
-# include("/home/oisov/Programming/Project-Euler/Problems/PE_002/Julia/PE_002.jl")
+include("/home/oisov/Programming/Project-Euler/Problems/PE_002/Julia/PE_002.jl")
 
 using BenchmarkTools
 
@@ -24,6 +24,8 @@ function benchmark_files(PE_dir)
         println(filename, " , ", a)
     end
 end
+
+println(@belapsed PE_002())
 
 PE = 2
 PE_dir = get_file_path(PE)

@@ -21,3 +21,5 @@ def PE_006(n=100):
 if __name__ == "__main__":
 
     print PE_006()
+    for i in range(12):
+        print str(10)+"**"+str(i)," : ",PE_006(10**i)
