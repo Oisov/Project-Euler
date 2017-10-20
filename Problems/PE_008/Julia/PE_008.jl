@@ -46,5 +46,3 @@ function PE_008(product_length = 13, number_string = file_2_number())
     end
     BigInt(max_product)
 end
-
-println(PE_008(13))
