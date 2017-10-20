@@ -5,7 +5,7 @@ end
 
 
 function string_2_product(string)
-    return prod(digits(parse(Int, string)))
+    prod(digits(parse(Int, string)))
 end
 
 
@@ -26,7 +26,7 @@ function max_substring_sum(string, product_length)
         first_value = parse(Int, string[index])
     end
 
-    return max_product
+    max_product
 end
 
 
