@@ -25,7 +25,6 @@ function max_substring_sum(string, product_length)
 
         first_value = parse(Int, string[index])
     end
-
     max_product
 end
 
