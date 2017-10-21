@@ -13,6 +13,9 @@ end
 
 
 function PE_004(palindrome_length = 3, reverse_range = true)
+    if palindrome_length == 1
+        return 9
+    end
     max_num , min_num = 10^(palindrome_length)-1, 10^(palindrome_length-1)
     range = reverse_range?(max_num:-1:min_num):(min_num:max_num)
     for number in range
