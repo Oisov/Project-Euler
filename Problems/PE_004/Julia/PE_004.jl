@@ -28,7 +28,7 @@ function PE_004(palindrome_length = 3, reverse_range = true)
             if smaller_palindrome % factor_1 == 0
                 factor_2 = div(smaller_palindrome, factor_1)
                 if number_of_digits(11*factor_2) == palindrome_length
-                    return (palindrome, " = ", factor_1, " * ", factor_2*11)
+                    return palindrome
                 end
             end
         end
