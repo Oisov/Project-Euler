@@ -2,83 +2,56 @@ function file_2_matrix(path="../Data/PE_011_data.txt")
     convert(Array{Int64}, readdlm(path))
 end
 
+function direction_product(matrix, y, x, delta_y, delta_x, elements)
+    product = 1
+    for i in 0:(elements-1)
 
-function sublists_with_min_len(array, min_length)
-    last_zero = 0
-    sublists = []
-    for (index, value) in enumerate(array)
+        next_x = x + i*delta_x
+        next_y = y + i*delta_y
+
+        value = matrix[next_x, next_y]
         if value == 0
-            if (index-1) - (last_zero) >= min_length
-                push!(sublists, array[last_zero+1:index-1])
-            end
-            last_zero = index
+            return 0
         end
+        product *= value
     end
-    if last_zero == 0
-        [array]
-    else
-        sublists
-    end
+    product
 end
 
-
-function max_product_of_length_n(array, product_length=4)
-    next_product = BigInt(prod(array[1:product_length]))
-    max_product = next_product
-
-    for index = 2:(length(array)-product_length+1)
-
-        next_product = BigInt(prod(array[index:index+product_length-1]))
-        if next_product > max_product
-            max_product = next_product
-        end
-
-    end
-    max_product
-end
-
-
-function max_line_sum(matrix, min_length)
+function PE_011(product_length=4, matrix=file_2_matrix())
+    rows, columns = size(matrix)
     max_product = -Inf
-    for index = 1:size(matrix, 1)
-        for sublist in sublists_with_min_len(matrix[index, :], min_length)
-            max_sublist_product = max_product_of_length_n(sublist, min_length)
-            if max_sublist_product > max_product
-                max_product = max_sublist_product
+    directions = [(0, 1), (1, 0), (1, -1), (1, 1)]
+
+    for i = 1:rows
+        for j = 1:columns
+
+            legal_left = (j - product_length) >= 1
+            legal_right = (j + product_length) <= columns
+            legal_down = (i + product_length) <= rows
+
+            legal_direction = [legal_right,
+                                legal_down,
+                                legal_left && legal_down,
+                                legal_right && legal_down]
+
+            for index in find(legal_direction)
+                delta_x, delta_y = directions[index]
+                product = direction_product(matrix,
+                                         i, j,
+                                         delta_x, delta_y,
+                                         product_length)
+                if product > max_product
+                    max_product = product
+                end
             end
+
         end
     end
     max_product
 end
 
 
-function max_diag_sum(mtx, min_length)
-    max_product = -Inf
-    for k = (-size(mtx, 1)+min_length):(size(mtx ,2)-min_length)
-        for sublist in sublists_with_min_len(diag(mtx, k), min_length)
-            max_sublist_product = max_product_of_length_n(sublist,
-                                                          min_length)
-            if max_sublist_product > max_product
-                println(max_sublist_product)
-                max_product = max_sublist_product
-            end
-        end
-    end
-    max_product
-end
+mtx = file_2_matrix()
 
-
-function PE_011(min_length = 4, matrix = file_2_matrix())
-    max_vertical = max_line_sum(matrix, min_length)
-    max_diagonal_1 = max_diag_sum(matrix, min_length)
-
-    matrix_transposed = transpose(matrix)
-    println("")
-    max_horizontal = max_line_sum(matrix_transposed, min_length)
-    max_diagonal_2 = max_diag_sum(matrix_transposed, min_length)
-
-    max(max_vertical, max_diagonal_1, max_horizontal, max_diagonal_2)
-end
-
-
-println(PE_011())
+println(PE_011(4))
