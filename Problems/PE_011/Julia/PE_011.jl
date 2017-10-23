@@ -50,8 +50,3 @@ function PE_011(product_length=4, matrix=file_2_matrix())
     end
     max_product
 end
-
-
-mtx = file_2_matrix()
-
-println(PE_011(4))
