@@ -13,6 +13,7 @@
 \usepackage{booktabs}
 \usepackage{csquotes}
 
+
 % Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{mathtools, amsfonts, amssymb} %amsmath is loaded by mathtools
@@ -83,7 +84,7 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 % Defines the style for the codeblocks
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{listings}
+\usepackage{listings, chngcntr}
 \usepackage{geometry}
 \geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in }
 
@@ -94,7 +95,13 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
   extendedchars=true, %
   breaklines=true, % sets automatic line breaking
   captionpos=t, % sets the caption-position to top
-  mathescape=true, showspaces=false, % Leerzeichen anzeigen ?
+  mathescape=true,
+  literate=
+         {=}{$\leftarrow{}$}{1}
+         {+=}{${}\uparrow{}$}{2}
+         {==}{$={}$}{2}
+         {||}{OR}{2},
+  showspaces=false, % Leerzeichen anzeigen ?
   showtabs=false, % Tabs anzeigen ?
   xleftmargin=17pt, framexleftmargin=17pt, framexrightmargin=17pt,
   framexbottommargin=5pt,
@@ -173,10 +180,19 @@ frametitleaboveskip=\dimexpr-\ht\strutbox\relax
 \title{Project Euler \\ - Prematurely optimized and Overengineered }
 \author{Øistein Søvik}
 
-\begin{document}
+% \includeonly{Problems/PE-014}
 
-\lstinputlisting[language=Julia, 
-                 caption=Recursive route-counting function,
-            ]{countRoutes.jl}
+\begin{document}
+\counterwithin{lstlisting}{section}
+
+\include{frontpage}
+
+\tableofcontents
+
+\include{preface}
+
+\include{Problems/PE-002}
+
+\include{Problems/PE-014}
 
 \end{document}
