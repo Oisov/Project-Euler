@@ -1,0 +1,48 @@
+
+
+\begin{ProjectEuler}[Lattice paths]{15}
+  Starting in the top left corner of a 2×2 grid, and only being able to move to
+  the right and down, there are exactly 6 routes to the bottom right corner.
+  %
+  \begin{center}
+    \includegraphics[scale=0.5]{../Images/PE_015.png}
+  \end{center}
+  %
+  How many such routes are there through a $20\times20$ grid?
+\end{ProjectEuler}
+
+\subsection{Recursive solution}
+
+\lstinputlisting[language=Julia, 
+                 caption=Recursive route-counting function,
+                 ]{../Problems/PE_015/Julia/PE_015_recursive.jl}
+
+To speed up this code we could have defined
+\lstinline|path_sum[(m,n)]=path_sum[(n,m)]| and as we know that there are only
+one way to reach each of the points on the first column and first row. However,
+while this halves the number of function calls this is not where the bottleneck
+lies. Most of the time is spent looking up dictionary values. 
+
+\newpage
+
+\subsection{Iterative solution}
+
+While the memoized recursion solves the problem, it is not only slow, but
+requires more memory, and some languages have trouble with deeply-nested
+recursive calls.
+
+If we could translate our recursion into and \emph{iterative} solution using
+bottom-up programming technique called \emph{dynamic programming} we would solve
+most of the concerns raised above. 
+\lstinputlisting[language=Julia, 
+                 caption=Recursive route-counting function,
+                 ]{../Problems/PE_015/Julia/PE_015_iterative.jl}
+
+                 \subsection{Combinatorial solution}
+                 
+\lstinputlisting[language=Julia, 
+                 caption=Recursive route-counting function,
+                 ]{../Problems/PE_015/Julia/PE_015.jl}
+%%% Local Variables:
+%%% TeX-master: "../ProjectEuler"
+%%% End:
