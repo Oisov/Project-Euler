@@ -1,5 +1,5 @@
-function first_n_digits(num, digits = 10)
-    BigInt(parse(Float64, string(BigInt(num))[1:digits]))
+function first_n_digits(number, digits = 10)
+    parse(Int64, string(number)[1:digits])
 end
 
 function PE_013(path="../PE_013_input.txt")
@@ -8,5 +8,7 @@ function PE_013(path="../PE_013_input.txt")
     for line in readlines(f)
         total += parse(Float64, line)
     end
-    first_n_digits(total)
+    first_n_digits(BigInt(total))
 end
+
+println(PE_013())

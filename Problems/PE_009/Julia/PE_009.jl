@@ -2,7 +2,6 @@ function PE_009(perimeter=1000)
 
     s2 = div(perimeter, 2)
     for m = 2:Int(ceil(sqrt(s2))-1)
-        println(m)
         if s2 % m != 0
             continue
         end
