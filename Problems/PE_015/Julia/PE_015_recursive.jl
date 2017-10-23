@@ -1,4 +1,4 @@
-function PE_015_recursive(rows=500, columns=500)
+function PE_015_recursive(rows=20, columns=20)
     path_sum = Dict{Any, BigInt}()
 
     function count_routes(m, n)
