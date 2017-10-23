@@ -4,7 +4,7 @@ end
 
 function direction_product(matrix, y, x, delta_y, delta_x, elements)
     product = 1
-    for i in 0:(elements-1)
+    for i = (1:elements)-1
 
         next_x = x + i*delta_x
         next_y = y + i*delta_y
