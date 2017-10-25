@@ -19,5 +19,3 @@ function PE_002_memoization(limit=4*10^6)
     end
     total
 end
-
-println(PE_002_memoization())
