@@ -26,7 +26,7 @@ natural numbers and the square of the sum.*
 -----
 
 <p align="center">
-   25164150
+   </b>25164150</b>
 </p>
 
 ----- 
