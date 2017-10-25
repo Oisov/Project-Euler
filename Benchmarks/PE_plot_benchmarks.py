@@ -35,7 +35,7 @@ def is_benchmark_datafile(filename, testname, language):
     else:
         filenameending = "." + LANGUAGES[language] + ".txt"
         print filenameending, " : ", filename
-        return filenameending in filename
+        return (filenameending in filename) and (filename[:13]==testname[:13])
 
 
 def benchmark_plot(PE, testname, language="all"):
@@ -48,7 +48,10 @@ def benchmark_plot(PE, testname, language="all"):
     else:
         language_name = "- " + language.capitalize()
 
+    plt.figure()
     for fname in os.listdir(cwd):
+        if not os.path.getsize(cwd + '/' + fname) > 0:
+            continue
         if not is_benchmark_datafile(fname, testname, language):
             continue
 
@@ -57,8 +60,10 @@ def benchmark_plot(PE, testname, language="all"):
         Y = data[:, 1]
         plt.plot(X, Y, label=fname.replace("_", " ")[12:-4])
 
-    plt.xticks(X, labels)
-    plt.legend(loc=2)
+    if not labels:
+        plt.xticks(X, labels)
+
+    plt.legend()
     plt.xlabel('Input')
     plt.ylabel('Time')
     plt.title('Project Euler {} - Benchmark {} {}'.format(
@@ -83,7 +88,8 @@ def benchmark_plot(PE, testname, language="all"):
     os.system('convert -density 200 standalonefile.pdf -quality 100 ' + image_name)
 
     destination = get_PE_dir(PE) + '/Images'
-    # plt.show()  #or
+    if not os.path.exists(destination):
+        os.makedirs(destination)
     os.rename(os.getcwd()+'/' + image_name, destination+'/'+image_name)
 
 
@@ -95,5 +101,15 @@ def benchmark_plot_all(PE, language="all"):
         benchmark_plot(PE, testfile, language)
 
 
+def benchmark(PE):
+    languages = get_languages(PE)
+    languages.append("all")
+    for language in languages:
+        print('\n\n=====================================')
+        print("    Benchmarking: ", language.capitalize())
+        print('=====================================')
+        benchmark_plot_all(PE, language)
+
+
 if __name__ == '__main__':
-    print(benchmark_plot_all(2))
+    print(benchmark(6))
