@@ -86,7 +86,7 @@ def create_answer_markdown(PE, path):
     fil = open(path + "/Markdown/" + filename + "_answer.md", "w")
     fil.write("\n")
     fil.write('<p align="center">\n')
-    fil.write("   </b>{}</b>\n".format(function()))
+    fil.write("   <b>{}</b>\n".format(function()))
     fil.write("</p>\n\n")
     fil.write("----- ")
     fil.close()
