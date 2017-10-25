@@ -17,19 +17,31 @@ four million, find the sum of the even-valued terms.*
 -----
 
 <p align="center">
-    <b>4613732</b>
+    4613732
 </p>
 
------
+----- 
+
+### Overview
+
+<p align="center">
+    <img src=Images/PE_002_test_01.png>
+</p>
+
+----- 
 
 ### Python
 
 <p align="center">
-    8.63126039505e-07 <b>s</b>
+    <img src=Images/PE_002_test_01_python.png>
 </p>
+
+----- 
+
+### Julia
 
 <p align="center">
-    <img src=Images/PE_002_test_01_python.png/>
+    <img src=Images/PE_002_test_01_julia.png>
 </p>
 
------
+----- 
