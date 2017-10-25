@@ -1,0 +1,63 @@
+% This file was created by matplotlib2tikz v0.6.13.
+\begin{tikzpicture}
+
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+title={Project Euler 6 - Benchmark 2 },
+xlabel={Input},
+ylabel={Time},
+xmin=-0.75, xmax=15.75,
+ymin=-0.0488939876478319, ymax=1.02677911703085,
+tick align=outside,
+tick pos=left,
+x grid style={lightgray!92.026143790849673!black},
+y grid style={lightgray!92.026143790849673!black},
+legend entries={{02.jl},{02.py}},
+legend cell align={left},
+legend style={at={(0.03,0.97)}, anchor=north west, draw=white!80.0!black}
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addplot [semithick, color0]
+table {%
+0 0.000301518
+1 0.060570273
+2 0.123504238
+3 0.184450963
+4 0.247372233
+5 0.310394169
+6 0.380093164
+7 0.434224126
+8 0.498434666
+9 0.569997951
+10 0.63792918
+11 0.695642637
+12 0.782997315
+13 0.867881302
+14 0.886946254
+15 0.977884885
+};
+\addplot [semithick, color1]
+table {%
+0 2.44383017222e-07
+1 4.18093204498e-07
+2 4.43207422892e-07
+3 4.22165393829e-07
+4 4.19446627299e-07
+5 4.24856344859e-07
+6 4.14574146271e-07
+7 4.11813259125e-07
+8 4.14266586304e-07
+9 4.1737874349e-07
+10 4.12526925405e-07
+11 4.15800412496e-07
+12 4.15420532227e-07
+13 4.16266123454e-07
+14 4.20840581258e-07
+15 4.26026980082e-07
+};
+\end{axis}
+
+\end{tikzpicture}
