@@ -43,38 +43,38 @@ def create_language_markdown(PE, path, language):
     name = 'PE_{:0>3}_'.format(PE) + language + '.md'
     filename = path + '/Markdown/' + name
 
-    file = open(filename, "w")
-    file.write("\n\n")
-    file.write("### " + language.capitalize())
-    file.write("\n\n")
+    fil = open(filename, "w")
+    fil.write("\n\n")
+    fil.write("### " + language.capitalize())
+    fil.write("\n\n")
 
     for filename in os.listdir(path + '/Images/'):
         if not filename.endswith(language + ".png"):
             continue
-        file.write('<p align="center">\n')
-        file.write("    <img src=Images/{}>\n".format(filename))
-        file.write("</p>\n\n")
-        file.write("----- ")
-
-    return path
+        fil.write('<p align="center">\n')
+        fil.write("    <img src=Images/{}>\n".format(filename))
+        fil.write("</p>\n\n")
+        fil.write("----- ")
+    fil.close() 
 
 
 def create_overview_markdown(PE, path):
     filename = path + '/Markdown/PE_{:0>3}_overview.md'.format(PE)
-    file = open(filename, "w")
-    file.write("\n\n")
-    file.write("### Overview")
-    file.write("\n\n")
+    fil = open(filename, "w")
+    fil.write("\n\n")
+    fil.write("### Overview")
+    fil.write("\n\n")
 
     for filename in os.listdir(path + '/Images/'):
         try:
             int(filename[-6:-4])
         except:
             continue
-        file.write('<p align="center">\n')
-        file.write("    <img src=Images/{}>\n".format(filename))
-        file.write("</p>\n\n")
-    file.write("----- ")
+        fil.write('<p align="center">\n')
+        fil.write("    <img src=Images/{}>\n".format(filename))
+        fil.write("</p>\n\n")
+    fil.write("----- ")
+    fil.close() 
 
 
 def create_answer_markdown(PE, path):
@@ -83,16 +83,16 @@ def create_answer_markdown(PE, path):
     module = importlib.import_module(filename)
     function = getattr(module, filename)
 
-    file = open(path + "/Markdown/" + filename + "_answer.md", "w")
-    file.write("\n")
-    file.write('<p align="center">\n')
-    file.write("    {}\n".format(function()))
-    file.write("</p>\n\n")
-    file.write("----- ")
-    file.close()
+    fil = open(path + "/Markdown/" + filename + "_answer.md", "w")
+    fil.write("\n")
+    fil.write('<p align="center">\n')
+    fil.write("   </b>{}</b>\n".format(function()))
+    fil.write("</p>\n\n")
+    fil.write("----- ")
+    fil.close()
 
 
-PE = 2
+PE = 6
 path = get_PE_dir(PE)
 language = 'julia'
 # create_answer(PE, path)
