@@ -24,3 +24,45 @@ numbers and the square of the sum is 3025 − 385 = 2640.
 natural numbers and the square of the sum.*
 
 -----
+
+<p align="center">
+   25164150
+</p>
+
+----- 
+
+### Overview
+
+<p align="center">
+    <img src=Images/PE_006_test_01.png>
+</p>
+
+<p align="center">
+    <img src=Images/PE_006_test_02.png>
+</p>
+
+----- 
+
+### Python
+
+<p align="center">
+    <img src=Images/PE_006_test_01_python.png>
+</p>
+
+----- <p align="center">
+    <img src=Images/PE_006_test_02_python.png>
+</p>
+
+----- 
+
+### Julia
+
+<p align="center">
+    <img src=Images/PE_006_test_02_julia.png>
+</p>
+
+----- <p align="center">
+    <img src=Images/PE_006_test_01_julia.png>
+</p>
+
+----- 
