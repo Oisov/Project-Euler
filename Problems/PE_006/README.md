@@ -26,7 +26,7 @@ natural numbers and the square of the sum.*
 -----
 
 <p align="center">
-   </b>25164150</b>
+   </p>25164150</b>
 </p>
 
 ----- 
@@ -49,11 +49,11 @@ natural numbers and the square of the sum.*
     <img src=Images/PE_006_test_01_python.png>
 </p>
 
------ <p align="center">
+<p align="center">
     <img src=Images/PE_006_test_02_python.png>
 </p>
 
------ 
+------
 
 ### Julia
 
@@ -61,8 +61,8 @@ natural numbers and the square of the sum.*
     <img src=Images/PE_006_test_02_julia.png>
 </p>
 
------ <p align="center">
+<p align="center">
     <img src=Images/PE_006_test_01_julia.png>
 </p>
 
------ 
+------
