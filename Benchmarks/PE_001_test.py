@@ -3,7 +3,6 @@ import timeout_decorator
 import timeit
 import time
 import sys
-
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib2tikz import save as tikz_save
@@ -51,35 +50,33 @@ def avg_run_file(filename, setup, number_of_runs=10**5, average_of=5):
     if average_of > 4:
         times.remove(max(times))
         times.remove(min(times))
-    return sum(times) / (len(times)*number_of_runs)
+    return sum(times) / (len(times) * number_of_runs)
 
-def read_test_data(PE):
-    path = get_PE_dir(PE) + '/tests.txt'
+
+def get_PE_dir(PE):
+    return os.path.dirname(os.getcwd()) + '/Problems/' + 'PE_{:0>3}'.format(PE)
+
+
+def read_test_data(PE, filename):
+    path = get_PE_dir(PE) + '/Tests/' + filename
     PE_input, result, labels = list(), list(), list()
     with open(path) as f:
         for line in f:
             line_list = line.strip().split(':')
             PE_input.append(line_list[1])
             result.append(line_list[2])
+            if not line_list[0]:
+                continue
             labels.append(line_list[0])
     return (PE_input, result, labels)
 
-def get_PE_dir(PE):
 
-    try:
-        int(PE)
-        PE_str = str(PE)
-    except:
-        PE_str = PE
+def benchmark_python_testfile(PE, testfile):
 
-    PE_folder = 'PE_' + (3 - len(PE_str)) * '0' + PE_str
-    return os.path.dirname(os.getcwd()) + '/Problems/' + PE_folder
-
-
-def find_files(PE=1):
+    print(PE, testfile)
 
     cwd = get_PE_dir(PE)
-    PE_input = read_test_data(PE)[0]
+    PE_input = read_test_data(PE, testfile)[0]
 
     file_dir = cwd + '/Python'
     sys.path.insert(0, file_dir)
@@ -88,8 +85,9 @@ def find_files(PE=1):
             continue
 
         file_no_ending = f[:-3]
-        filename_2_write = cwd + '/Benchmarks/benchmark_01_' + file_no_ending + '.txt'
-        file = open(filename_2_write,"w")
+        print(f)
+        filename_2_write = cwd + '/Benchmarks/' + testfile[:-4] + f[6:] + '.txt'
+        file = open(filename_2_write, "w")
         for index, value in enumerate(PE_input):
             filename = file_no_ending + '(' + value + ')'
             setup = 'from {} import {}'.format(file_no_ending, file_no_ending)
@@ -109,23 +107,27 @@ def find_files(PE=1):
     #     else:
     #         continue
 
-def benchmark_plot(PE=1):
 
-    cwd = get_PE_dir(PE) + '/Benchmarks'
-    labels = read_test_data(PE)[2]
+def benchmark_python(PE, testfile = 'all'):
+    PE_dir = get_PE_dir(PE)
+    cwd = PE_dir + '/Tests/'
 
-    for fname in os.listdir(cwd):
-        data=np.loadtxt(cwd + '/' + fname)
-        X=data[:,0]
-        Y=data[:,1]
-        plt.plot(X,Y, label=fname.replace("_"," ")[12:-4])
-    plt.xticks(X, labels)
-    plt.legend(loc = 2)
-    plt.xlabel('Input')
-    plt.ylabel('Time')
-    plt.title('Project Euler {} - Benchmark 01 - Python'.format(PE))
-    tikz_save('test.tex')
-    plt.show() #or
+    testfile_lst = []
+    if testfile == 'all':
+        for f in os.listdir(cwd):
+            testfile_lst.append(f)
+    else:
+        testfile_lst.append(testfile)
+
+    if not testfile:
+        return
+
+    if not os.path.exists(PE_dir + '/Benchmarks'):
+        os.makedirs(PE_dir + '/Benchmarks')
+
+    for testfil in testfile_lst:
+        benchmark_python_testfile(PE, testfil)
+
 
 if __name__ == '__main__':
     # a = mytest('001_naive.py')
@@ -138,4 +140,5 @@ if __name__ == '__main__':
     # print(PE_001([3, 5], 10, 100))
 
     # print(find_files(1))
-    benchmark_plot(PE=1)
+    # benchmark_plot(PE=1)
+    print(benchmark_python(6))
