@@ -5,14 +5,14 @@ from PE_Benchmark import get_PE_dir, define_function
 def get_next_testnumber(PE, path):
     PE_name = 'PE_{:0>3}'.format(PE)
     max_number = 0
-    for filename in os.listdir(path + '/Tests'):
-        number = int(filename[12:13])
+    for filename in os.listdir(path):
+        number = int(filename[12:14])
         if number > max_number:
             max_number = number
     return max_number+1
 
 
-def create_testdata(PE, minimum, maximum, step=50):
+def create_testdata(PE, minimum, maximum, step=15):
     fun = define_function(PE)
     steplength = (maximum - minimum) // step
     current = minimum - steplength
@@ -21,7 +21,12 @@ def create_testdata(PE, minimum, maximum, step=50):
     ans_pad = len(str(fun(maximum)))
 
     path = get_PE_dir(PE)
-    nxt_num = get_next_testnumber(PE, path)
+    test_path = path + '/Tests'
+    if os.path.exists(test_path):
+        nxt_num = get_next_testnumber(PE, test_path)
+    else:
+        nxt_num = 1
+        os.makedirs(test_path)
 
     file_2_write = '{}/Tests/PE_{:0>3}_test_{:0>2}.txt'.format(path,
                                                                PE,
@@ -38,4 +43,5 @@ def create_testdata(PE, minimum, maximum, step=50):
     fil.close()
 
 
-print(create_testdata(2, 0, 4 * 10**6))
+print(create_testdata(6, 1, 500))
+print(create_testdata(6, 500, 10**6))

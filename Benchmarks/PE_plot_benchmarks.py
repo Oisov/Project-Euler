@@ -35,7 +35,7 @@ def is_benchmark_datafile(filename, testname, language):
     else:
         filenameending = "." + LANGUAGES[language] + ".txt"
         print filenameending, " : ", filename
-        return (filenameending in filename) and (filename[:13]==testname[:13])
+        return (filenameending in filename) and (filename[:14]==testname[:14])
 
 
 def benchmark_plot(PE, testname, language="all"):
@@ -67,9 +67,11 @@ def benchmark_plot(PE, testname, language="all"):
     plt.xlabel('Input')
     plt.ylabel('Time')
     plt.title('Project Euler {} - Benchmark {} {}'.format(
-        PE, fname[12:14].replace("0", " "), language_name))
+        PE, testname[-6:-4].replace("0",""), language_name))
 
     tikz_save('test.tex')
+    plt.clf()
+    plt.close()
     os.system('pdflatex standalonefile.tex')
 
     destination = os.path.dirname(os.getcwd()) + '/Raport/Benchmarks'

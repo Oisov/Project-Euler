@@ -3,6 +3,7 @@ import timeout_decorator
 import timeit
 import time
 import sys
+import importlib
 
 LANGUAGES = {"python": "py",
              "julia": "jl",
@@ -21,3 +22,11 @@ def get_languages(PE):
         if fname.lower() in LANGUAGES.keys():
             languages.append(fname.lower())
     return languages
+
+
+def define_function(PE):
+    path = get_PE_dir(PE) + '/Python'
+    filename = 'PE_{:0>3}'.format(PE)
+    sys.path.insert(0, path)
+    module = importlib.import_module(filename)
+    return getattr(module, filename)
