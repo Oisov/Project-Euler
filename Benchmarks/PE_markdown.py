@@ -54,7 +54,7 @@ def create_language_markdown(PE, path, language):
         fil.write('<p align="center">\n')
         fil.write("    <img src=Images/{}>\n".format(filename))
         fil.write("</p>\n\n")
-        fil.write("----- ")
+    fil.write("------")
     fil.close() 
 
 
