@@ -67,10 +67,19 @@ function benchmark_julia_testfile(PE, testfile)
 end
 
 
+function benchmark_all_julia(PE)
+    for testfile in readdir(get_PE_dir(PE) * "/Tests")
+        benchmark_julia_testfile(PE, testfile)
+    end
+end
+
 # PE = 2
 # PE_dir = get_file_path(PE)
 # include_files(PE_dir)
 # benchmark_files(PE_dir)
 
 # println(read_test_data(2, "PE_002_test_01.txt"))
-println(benchmark_julia_testfile(2,  "PE_002_test_01.txt"))
+# println(benchmark_julia_testfile(2,  "PE_002_test_01.txt"))
+
+benchmark_all_julia(6)
+
