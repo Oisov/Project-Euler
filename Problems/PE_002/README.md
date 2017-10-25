@@ -29,7 +29,7 @@ four million, find the sum of the even-valued terms.*
 </p>
 
 <p align="center">
-    <img src=PE_002_Benchmark_01_Python.png/>
+    <img src=/Images/PE_002_test_01_python.png/>
 </p>
 
 -----
