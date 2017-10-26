@@ -47,12 +47,13 @@ function PE_004(palindrome_length = 3)
 
         smallest_possible_factor = div(palindrome, 10^(palindrome_length))
         for number = max_num:-1:(smallest_possible_factor)
-            if smaller_palindrome % number == 0
-                factor_1 = number
-                factor_2 = 11*div(smaller_palindrome, factor_1)
-                if equal_number_of_digits(factor_1, factor_2)
-                    return (palindrome, factor_1, factor_2)
-                end
+            if smaller_palindrome % number != 0
+                continue
+            end
+            factor_1 = number
+            factor_2 = 11*div(smaller_palindrome, factor_1)
+            if equal_number_of_digits(factor_1, factor_2)
+                return palindrome
             end
         end
     end
