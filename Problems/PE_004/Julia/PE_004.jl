@@ -48,12 +48,8 @@ function PE_004(palindrome_length = 3)
             continue
         end
 
-        # println("fac_1: ", div(smaller_palindrome, max_num))
-        # println("fac_2: ", min_num_11)
-
         smallest_possible_factor = max(div(smaller_palindrome, max_num),
                                        min_num_11)
-
         for number = max_num_11:-1:smallest_possible_factor+1
             if smaller_palindrome % number == 0
                 return palindrome
