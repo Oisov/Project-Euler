@@ -11,3 +11,33 @@ the product of two 2-digit numbers is 9009 = 91 × 99.
 
 -----
 
+
+<p align="center">
+   <b>906609</b>
+</p>
+
+----- 
+
+### Overview
+
+<p align="center">
+    <img src=Images/PE_004_test_01.png>
+</p>
+
+----- 
+
+### Julia
+
+<p align="center">
+    <img src=Images/PE_004_test_01_julia.png>
+</p>
+
+------
+
+### Python
+
+<p align="center">
+    <img src=Images/PE_004_test_01_python.png>
+</p>
+
+------
