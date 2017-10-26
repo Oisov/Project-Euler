@@ -14,6 +14,7 @@ end
 
 
 function temp_even_factors(length)
+    length = div(length, 2)
     factor_1 = parse(BigInt, ("9"^length) * ("0"^(length-1)) * "1")
     factor_2 = parse(BigInt, "9"^(2*length))
     return (factor_1, factor_2)
@@ -36,6 +37,8 @@ function PE_004(palindrome_length = 3)
     end
 
     max_num , min_num = 10^(palindrome_length)-1, 10^(palindrome_length-1)
+    max_num_11, min_num_11 = div(max_num, 11), div(min_num, 11)
+
     for number = max_num:-1:min_num
 
         palindrome = number_2_palindrome(number)
@@ -45,14 +48,14 @@ function PE_004(palindrome_length = 3)
             continue
         end
 
-        smallest_possible_factor = div(palindrome, 10^(palindrome_length))
-        for number = max_num:-1:(smallest_possible_factor)
-            if smaller_palindrome % number != 0
-                continue
-            end
-            factor_1 = number
-            factor_2 = 11*div(smaller_palindrome, factor_1)
-            if equal_number_of_digits(factor_1, factor_2)
+        # println("fac_1: ", div(smaller_palindrome, max_num))
+        # println("fac_2: ", min_num_11)
+
+        smallest_possible_factor = max(div(smaller_palindrome, max_num),
+                                       min_num_11)
+
+        for number = max_num_11:-1:smallest_possible_factor+1
+            if smaller_palindrome % number == 0
                 return palindrome
             end
         end
