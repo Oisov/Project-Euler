@@ -16,7 +16,7 @@ def create_markdown(PE, create_all=False):
         create_overview_markdown(PE, path)
         create_answer_markdown(PE, path)
 
-        for language in get_languages(PE):
+        for language in sorted(get_languages(PE)):
             create_language_markdown(PE, path, language)
     PE_name = 'PE_{:0>3}'.format(PE)
     first_three_files = [
@@ -31,7 +31,7 @@ def create_markdown(PE, create_all=False):
     for filename in first_three_files:
         os.system('cat {} >> {}'.format(filename, readme))
 
-    for files in os.listdir(markdown_folderpath):
+    for files in sorted(os.listdir(markdown_folderpath)):
         filepath = markdown_folderpath + '/' + files
         if filepath in first_three_files:
             continue

@@ -43,18 +43,6 @@ natural numbers and the square of the sum.*
 
 ----- 
 
-### Python
-
-<p align="center">
-    <img src=Images/PE_006_test_01_python.png>
-</p>
-
-<p align="center">
-    <img src=Images/PE_006_test_02_python.png>
-</p>
-
-------
-
 ### Julia
 
 <p align="center">
@@ -63,6 +51,18 @@ natural numbers and the square of the sum.*
 
 <p align="center">
     <img src=Images/PE_006_test_01_julia.png>
+</p>
+
+------
+
+### Python
+
+<p align="center">
+    <img src=Images/PE_006_test_01_python.png>
+</p>
+
+<p align="center">
+    <img src=Images/PE_006_test_02_python.png>
 </p>
 
 ------
