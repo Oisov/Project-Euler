@@ -14,7 +14,7 @@ def cheat_even(num):
     num1 = nine + nine
     num2 = nine + '0' * (-1 + num / 2) + '1'
     product = nine + '0' * (num) + nine
-    return ((int(num1), int(num2)), int(product))
+    return (int(num1), int(num2))
 
 
 def generate_palindromes(n, increase=False):
@@ -33,6 +33,12 @@ def generate_palindromes(n, increase=False):
 def PE_004(n=3):
     if n == 1:
         return 0
+    elif n % 2 == 0:
+        fac_1, fac_2 = cheat_even(n)
+        palindrome = fac_1*fac_2
+        if is_palindrome(palindrome):
+            return palindrome
+
     en = 10**n
     en1 = 10**(n - 1)
     for p in generate_palindromes(n):
