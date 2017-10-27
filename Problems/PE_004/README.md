@@ -21,6 +21,10 @@ the product of two 2-digit numbers is 9009 = 91 × 99.
 ### Overview
 
 <p align="center">
+    <img src=Images/PE_004_test_02.png>
+</p>
+
+<p align="center">
     <img src=Images/PE_004_test_01.png>
 </p>
 
@@ -29,12 +33,20 @@ the product of two 2-digit numbers is 9009 = 91 × 99.
 ### Julia
 
 <p align="center">
+    <img src=Images/PE_004_test_02_julia.png>
+</p>
+
+<p align="center">
     <img src=Images/PE_004_test_01_julia.png>
 </p>
 
 ------
 
 ### Python
+
+<p align="center">
+    <img src=Images/PE_004_test_02_python.png>
+</p>
 
 <p align="center">
     <img src=Images/PE_004_test_01_python.png>
