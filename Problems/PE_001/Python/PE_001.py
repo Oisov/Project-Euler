@@ -71,3 +71,4 @@ def PE_001(div=[3, 5], stop=10**3, start=1):
 if __name__ == "__main__":
 
     print(PE_001())
+    print(PE_001([3,5,7],stop=600,start=1))

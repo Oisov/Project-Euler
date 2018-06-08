@@ -59,7 +59,6 @@
     "chapterbib"
     "multicol")
    (TeX-add-symbols
-    "lcm"
     "kortlinje"
     "link"
     "figureautorefname"

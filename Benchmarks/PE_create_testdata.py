@@ -1,6 +1,6 @@
 import os, importlib, sys
-from PE_Benchmark import get_PE_dir, define_function
 
+from PE_Benchmark import get_PE_dir, define_function
 
 def get_next_testnumber(PE, path):
     PE_name = 'PE_{:0>3}'.format(PE)
@@ -14,7 +14,10 @@ def get_next_testnumber(PE, path):
 
 def create_testdata(PE, minimum, maximum, step=15):
     fun = define_function(PE)
-    steplength = (maximum - minimum) // step
+    steplength = max((maximum - minimum) // step, 1)
+    if steplength == 1:
+        step = maximum - minimum
+
     current = minimum - steplength
 
     step_pad = len(str(maximum))
@@ -36,12 +39,9 @@ def create_testdata(PE, minimum, maximum, step=15):
 
     for i in range(step + 1):
         current += steplength
-        line= ' : {number:{width}d} : {number_2:{width_2}d}'.format(
-            width=step_pad, number=current, width_2=ans_pad,
+        line= '{}: {number:{width}d} : {number_2:{width_2}d}'.format(
+            i+1, width=step_pad, number=current, width_2=ans_pad,
         number_2=fun(current))
+        print(line)
         fil.write(line+"\n")
     fil.close()
-
-
-print(create_testdata(6, 1, 500))
-print(create_testdata(6, 500, 10**6))

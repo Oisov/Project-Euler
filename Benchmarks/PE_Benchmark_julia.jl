@@ -40,6 +40,25 @@ function read_test_data(PE, filename)
     return (PE_input, result, labels)
 end
 
+function benchmark_julia_function(f, input)
+    @belapsed $f($input...))
+end
+
+function benchmark_julia_list(f, inputlist)
+    results = [0]*len(inputlist)
+    for input in inputlist
+        push!(results, benchmark_julia_function(f, input))
+    end
+    results
+end
+
+function write_benchmarks_2_file(filename, inputs, results):
+    open(filename, "w") do file
+        for (index, input) in enumerate(inputs)
+            write(file, "$input  $results[index]")
+        end
+    end
+end
 
 function benchmark_julia_testfile(PE, testfile)
     PE_dir = get_PE_dir(PE)
@@ -57,16 +76,9 @@ function benchmark_julia_testfile(PE, testfile)
         filename_without_ending = Symbol(filename[1:end-3])
         f = getfield(Main, Symbol(filename_without_ending))
 
-
-        filename_2_write = PE_dir * "/Benchmarks/" * testfile[1:end-4] * filename[7:end] * ".txt"
-
-        open(filename_2_write, "w") do file
-            for (index, input) in enumerate(PE_input)
-                println(index, ", ", input)
-                write(file, string(index-1) * " " * string(@belapsed $f($input...)) * "\n")
-            end
-        end
-
+        results = benchmark_julia_list(f, PE_input)
+        filename_2_write = "$PE_dir/Benchmarks/$testfile[1:end-4]$filename[7:end].txt"
+        write_benchmarks_2_file(filename_2_write, PE_input, results)
     end
 end
 

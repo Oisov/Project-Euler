@@ -1,0 +1,39 @@
+% This file was created by matplotlib2tikz v0.6.13.
+\begin{tikzpicture}
+
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+title={Project Euler 4 - Benchmark 2 },
+xlabel={Input},
+ylabel={Time},
+xmin=-0.1, xmax=2.1,
+ymin=-0.02022848015, ymax=0.42501847915,
+xtick={0,1,2},
+xticklabels={$6$ ,$7$ ,$8$ },
+tick align=outside,
+tick pos=left,
+x grid style={lightgray!92.026143790849673!black},
+y grid style={lightgray!92.026143790849673!black},
+legend style={draw=white!80.0!black},
+legend entries={{4.py},{4.jl}},
+legend cell align={left}
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addplot [semithick, color0]
+table {%
+0 0.0136708697925
+1 0.0872560590506
+2 0.315647264322
+};
+\addplot [semithick, color1]
+table {%
+0 1.0018e-05
+1 0.404779981
+2 1.2308e-05
+};
+\end{axis}
+
+\end{tikzpicture}

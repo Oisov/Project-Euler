@@ -4,10 +4,11 @@ import timeit
 import time
 import sys
 import numpy as np
+
 from matplotlib import pyplot as plt
 from matplotlib2tikz import save as tikz_save
 
-# from PE_001 import PE_001
+from PE_Benchmark import get_languages, get_PE_dir, LANGUAGES, read_test_data
 
 
 def time_bolean(n, filename, setup):
@@ -50,25 +51,8 @@ def avg_run_file(filename, setup, number_of_runs=10**5, average_of=5):
     if average_of > 4:
         times.remove(max(times))
         times.remove(min(times))
-    return sum(times) / (len(times) * number_of_runs)
+    return sum(times) / float(max(len(times) * number_of_runs,1))
 
-
-def get_PE_dir(PE):
-    return os.path.dirname(os.getcwd()) + '/Problems/' + 'PE_{:0>3}'.format(PE)
-
-
-def read_test_data(PE, filename):
-    path = get_PE_dir(PE) + '/Tests/' + filename
-    PE_input, result, labels = list(), list(), list()
-    with open(path) as f:
-        for line in f:
-            line_list = line.strip().split(':')
-            PE_input.append(line_list[1])
-            result.append(line_list[2])
-            if not line_list[0]:
-                continue
-            labels.append(line_list[0])
-    return (PE_input, result, labels)
 
 
 def benchmark_python_testfile(PE, testfile):
@@ -93,7 +77,6 @@ def benchmark_python_testfile(PE, testfile):
             setup = 'from {} import {}'.format(file_no_ending, file_no_ending)
 
             time_taken = avg_run_file(filename, setup, number_of_runs=0)
-            print(time_taken)
             if time_taken == 0:
                 break
 
@@ -108,7 +91,7 @@ def benchmark_python_testfile(PE, testfile):
     #         continue
 
 
-def benchmark_python(PE, testfile = 'all'):
+def benchmark_python(PE, testfile='all'):
     PE_dir = get_PE_dir(PE)
     cwd = PE_dir + '/Tests/'
 
@@ -127,18 +110,3 @@ def benchmark_python(PE, testfile = 'all'):
 
     for testfil in testfile_lst:
         benchmark_python_testfile(PE, testfil)
-
-
-if __name__ == '__main__':
-    # a = mytest('001_naive.py')
-    # b = mytest('001.py')
-    # print('Naive: ', a)
-    # print('PE_001: ', b)
-    # print(bijection_timer())
-    # string = 'PE_001([3,5], 10**4, 1)'
-    # print(timeit.timeit(string, setup='from PE_001 import PE_001',number=100))
-    # print(PE_001([3, 5], 10, 100))
-
-    # print(find_files(1))
-    # benchmark_plot(PE=1)
-    print(benchmark_python(6))

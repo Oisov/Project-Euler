@@ -5,14 +5,12 @@ import time
 import sys
 import importlib
 
-LANGUAGES = {"python": "py",
-             "julia": "jl",
-             "java": "class"
-}
+
+LANGUAGES = {"python": "py", "julia": "jl", "java": "class"}
+
 
 def get_PE_dir(PE):
-    return os.path.dirname(os.getcwd()) + '/Problems/' + 'PE_{:0>3}'.format(
-        PE)
+    return os.path.dirname(os.getcwd()) + '/Problems/' + 'PE_{:0>3}'.format(PE)
 
 
 def get_languages(PE):
@@ -30,3 +28,19 @@ def define_function(PE):
     sys.path.insert(0, path)
     module = importlib.import_module(filename)
     return getattr(module, filename)
+
+
+def read_test_data(PE, filename):
+    path = get_PE_dir(PE) + '/Tests/' + filename
+    PE_input, result, labels = list(), list(), list()
+    with open(path) as f:
+        for line in f:
+            line_list = line.strip().split(':')
+            PE_input.append(line_list[1])
+            result.append(line_list[2])
+            if not line_list[0]:
+                continue
+            labels.append(line_list[0])
+    return (PE_input, result, labels)
+
+

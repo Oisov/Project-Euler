@@ -1,4 +1,3 @@
-
 import os
 import timeout_decorator
 import timeit
@@ -8,8 +7,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib2tikz import save as tikz_save
 
-from PE_Benchmark import LANGUAGES, get_PE_dir, get_languages
-
+from PE_Benchmark import get_languages, get_PE_dir, LANGUAGES
 
 
 def read_test_data(PE, filename):
@@ -35,7 +33,8 @@ def is_benchmark_datafile(filename, testname, language):
     else:
         filenameending = "." + LANGUAGES[language] + ".txt"
         print filenameending, " : ", filename
-        return (filenameending in filename) and (filename[:14]==testname[:14])
+        return (filenameending in filename) and (
+            filename[:14] == testname[:14])
 
 
 def benchmark_plot(PE, testname, language="all"):
@@ -58,16 +57,23 @@ def benchmark_plot(PE, testname, language="all"):
         data = np.loadtxt(cwd + '/' + fname)
         X = data[:, 0]
         Y = data[:, 1]
-        plt.plot(X, Y, label=fname.replace("_", " ")[12:-4])
+        labelname = str(PE) + fname.replace("_", " ")[14:-4]
+        if language not in ["all", True]:
+            plt.plot(
+                X, Y, label=labelname.replace("." + LANGUAGES[language], " "))
+        else:
+            plt.plot(X, Y, label=labelname)
 
     if not labels:
+        pass
+    else:
         plt.xticks(X, labels)
 
     plt.legend()
     plt.xlabel('Input')
     plt.ylabel('Time')
     plt.title('Project Euler {} - Benchmark {} {}'.format(
-        PE, testname[-6:-4].replace("0",""), language_name))
+        PE, testname[-6:-4].replace("0", ""), language_name))
 
     tikz_save('test.tex')
     plt.clf()
@@ -77,23 +83,23 @@ def benchmark_plot(PE, testname, language="all"):
     destination = os.path.dirname(os.getcwd()) + '/Raport/Benchmarks'
     new_name = testname[:-4] + '.tex'
     print('===')
-    print(os.getcwd()+'/test.tex')
-    print(destination+'/'+new_name)
+    print(os.getcwd() + '/test.tex')
+    print(destination + '/' + new_name)
     print('===')
-    os.rename(os.getcwd()+'/test.tex', destination+'/'+new_name)
+    os.rename(os.getcwd() + '/test.tex', destination + '/' + new_name)
 
     image_name = testname[:-4]
     if language not in ["all", True]:
         image_name += "_" + language
     image_name += ".png"
 
-    os.system('convert -density 200 standalonefile.pdf -quality 100 ' + image_name)
+    os.system('convert -density 200 standalonefile.pdf -quality 100 ' +
+              image_name)
 
     destination = get_PE_dir(PE) + '/Images'
     if not os.path.exists(destination):
         os.makedirs(destination)
-    os.rename(os.getcwd()+'/' + image_name, destination+'/'+image_name)
-
+    os.rename(os.getcwd() + '/' + image_name, destination + '/' + image_name)
 
 
 def benchmark_plot_all(PE, language="all"):
@@ -111,7 +117,4 @@ def benchmark(PE):
         print("    Benchmarking: ", language.capitalize())
         print('=====================================')
         benchmark_plot_all(PE, language)
-
-
-if __name__ == '__main__':
-    print(benchmark(6))
+    os.system('rm -rf standalonefile.pdf')
